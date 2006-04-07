@@ -1,0 +1,18 @@
+# Description: xorg lib libFS
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-xproto, xorg-fontsproto, xorg-xtrans
+
+name=xorg-libfs
+version=1.0.0
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libFS-$version.tar.bz2)
+
+build() {
+	cd libFS-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libXtst.a
+-rwxr-xr-x	root/root	usr/lib/libXtst.la
+lrwxrwxrwx	root/root	usr/lib/libXtst.so -> libXtst.so.6.1.0
+lrwxrwxrwx	root/root	usr/lib/libXtst.so.6 -> libXtst.so.6.1.0
+-rwxr-xr-x	root/root	usr/lib/libXtst.so.6.1.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xtst.pc

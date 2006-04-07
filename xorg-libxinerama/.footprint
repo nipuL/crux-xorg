@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libXinerama.a
+-rwxr-xr-x	root/root	usr/lib/libXinerama.la
+lrwxrwxrwx	root/root	usr/lib/libXinerama.so -> libXinerama.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libXinerama.so.1 -> libXinerama.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libXinerama.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xinerama.pc

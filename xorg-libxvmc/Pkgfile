@@ -1,0 +1,18 @@
+# Description: xorg lib libXvMC
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-libx11, xorg-libxext, xorg-libxv
+
+name=xorg-libxvmc
+version=1.0.1
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libXvMC-$version.tar.bz2)
+
+build() {
+	cd libXvMC-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

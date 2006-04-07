@@ -1,0 +1,20 @@
+# Description: xorg font font-adobe-100dpi
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-mkfontdir, xorg-mkfontscale
+
+name=xorg-font-adobe-100dpi
+version=1.0.0
+release=2
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/font-adobe-100dpi-$version.tar.bz2)
+
+build() {
+	cd font-adobe-100dpi-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -f $PKG/usr/lib/X11/fonts/100dpi/fonts.{dir,scale}
+}

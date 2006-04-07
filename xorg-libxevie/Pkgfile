@@ -1,0 +1,18 @@
+# Description: xorg lib libXevie
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-evieext, xorg-xproto, xorg-libx11, xorg-libxext
+
+name=xorg-libxevie
+version=1.0.0
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libXevie-$version.tar.bz2)
+
+build() {
+	cd libXevie-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

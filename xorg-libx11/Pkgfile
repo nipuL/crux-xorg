@@ -1,0 +1,18 @@
+# Description: xorg lib libX11
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-bigreqsproto, xorg-xf86bigfontproto, xorg-xextproto, xorg-xtrans, xorg-libxau, xorg-xcmiscproto, xorg-libxdmcp, xorg-kbproto, xorg-inputproto
+
+name=xorg-libx11
+version=1.0.0
+release=2
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libX11-$version.tar.bz2)
+
+build() {
+	cd libX11-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

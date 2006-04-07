@@ -1,0 +1,18 @@
+# Description: xorg lib libXres
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-libx11, xorg-libxext, xorg-resourceproto
+
+name=xorg-libxres
+version=1.0.0
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libXres-$version.tar.bz2)
+
+build() {
+	cd libXres-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

@@ -1,0 +1,18 @@
+# Description: ICE authority file utility
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-server, xorg-xproto, xorg-libice
+
+name=xorg-iceauth
+version=1.0.1
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/iceauth-$version.tar.bz2)
+
+build() {
+	cd iceauth-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

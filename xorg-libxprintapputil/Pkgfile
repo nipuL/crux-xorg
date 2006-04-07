@@ -1,0 +1,18 @@
+# Description: xorg lib libXprintAppUtil
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-libxprintutil
+
+name=xorg-libxprintapputil
+version=1.0.1
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libXprintAppUtil-$version.tar.bz2)
+
+build() {
+	cd libXprintAppUtil-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

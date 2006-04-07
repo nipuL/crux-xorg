@@ -1,0 +1,35 @@
+# Description: Mesa 3D Graphics Library
+# URL: http://www.mesa3d.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt
+#
+# Nice to have: libtxc_dxtn
+
+name=mesa3d
+version=6.5
+release=1
+source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
+
+build() {
+	cd Mesa-$version
+
+	sed -i -e 's/define DEFAULT_DRIVER_DIR.*$/define DEFAULT_DRIVER_DIR "\/usr\/lib\/dri"/' src/glx/x11/dri_glx.c
+
+	# setting GLUT_LIB to 'm' will make it so that glxgears and glxinfo
+	# are not linked to libglut (they don't use it at all)
+	# feel free to come up with a nicer way of workind around this problem :)
+	make OPT_FLAGS="$CFLAGS" GLUT_LIB=m linux-dri-x86
+
+	pushd progs/xdemos
+	make OPT_FLAGS="$CFLAGS" GLUT_LIB=m glxgears glxinfo
+	popd
+
+	install -d $PKG/usr/{lib,include}
+	make DESTDIR=$PKG/usr install
+
+	install -d $PKG/usr/lib/dri
+	install lib/*_dri.so $PKG/usr/lib/dri
+
+	install -d $PKG/usr/bin
+	install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
+}

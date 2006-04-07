@@ -1,0 +1,20 @@
+# Description: xorg driver xf86-video-ati
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+
+name=xorg-xf86-video-ati
+version=6.5.7.3
+release=2
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xf86-video-ati-$version.tar.bz2 \
+        radeon-memmap-7.0-3.diff)
+
+build() {
+	cd xf86-video-ati-$version
+
+	patch -Np1 -i ../radeon-memmap-7.0-3.diff
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

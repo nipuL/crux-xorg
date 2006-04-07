@@ -1,0 +1,17 @@
+# Description: xorg driver xf86-video-fbdev
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+
+name=xorg-xf86-video-fbdev
+version=0.1.0.5
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xf86-video-fbdev-$version.tar.bz2)
+
+build() {
+	cd xf86-video-fbdev-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

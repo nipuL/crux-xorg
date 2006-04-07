@@ -1,0 +1,25 @@
+# Description: X Window System server
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: libdrm, mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-libx11, xorg-liblbxutil, xorg-xf86driproto, xorg-glproto, xorg-printproto, xorg-libxdmcp, xorg-libxkbfile, xorg-libxkbui, xorg-randrproto, xorg-renderproto, xorg-fixesproto, xorg-damageproto, xorg-xcmiscproto, xorg-xextproto, xorg-xproto, xorg-xtrans, xorg-xf86miscproto, xorg-xf86vidmodeproto, xorg-xf86bigfontproto, xorg-scrnsaverproto, xorg-bigreqsproto, xorg-resourceproto, xorg-fontsproto, xorg-inputproto, xorg-xf86dgaproto, xorg-videoproto, xorg-compositeproto, xorg-trapproto, xorg-recordproto, xorg-xineramaproto, xorg-fontcacheproto, xorg-libxfont, xorg-libxau, xorg-libfontenc, xorg-libxevie, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxxf86vm, xorg-libxaw, xorg-libxmu, xorg-libxpm, xorg-libxv, xorg-libxvmc, xorg-libxrender, xorg-libxi, xorg-libxres, xorg-libxfixes, xorg-libxcomposite, xorg-libxdamage, xorg-libxinerama, xorg-libxrandr, xorg-libxtrap, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga
+
+name=xorg-server
+version=1.0.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2 \
+        http://dl.sourceforge.net/mesa3d/MesaLib-6.4.2.tar.bz2 \
+        $name.diff)
+
+build() {
+	cd $name-$version
+
+	patch -Np1 -i ../$name.diff
+
+	# the package doesn't build against Mesa-6.5
+	./configure --prefix=/usr --enable-dri \
+	            --with-mesa-source=../Mesa-6.4.2 \
+	            --localstatedir=/var
+
+	make
+	make DESTDIR=$PKG install
+}

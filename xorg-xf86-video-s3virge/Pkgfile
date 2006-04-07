@@ -1,0 +1,17 @@
+# Description: xorg driver xf86-video-s3virge
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+
+name=xorg-xf86-video-s3virge
+version=1.8.6.5
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xf86-video-s3virge-$version.tar.bz2)
+
+build() {
+	cd xf86-video-s3virge-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

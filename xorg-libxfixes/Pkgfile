@@ -1,0 +1,18 @@
+# Description: xorg lib libXfixes
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-libx11, xorg-xproto, xorg-fixesproto, xorg-xextproto
+
+name=xorg-libxfixes
+version=3.0.1.2
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libXfixes-$version.tar.bz2)
+
+build() {
+	cd libXfixes-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

@@ -1,0 +1,18 @@
+# Description: Display information utility for X
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Depends on: xorg-libx11, xorg-libxext, xorg-libxtst, xorg-libxxf86vm, xorg-libxxf86dga, xorg-libxxf86misc, xorg-libxi, xorg-libxrender, xorg-libxinerama, xorg-libdmx, xorg-libxp
+
+name=xorg-xdpyinfo
+version=1.0.1
+release=1
+source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xdpyinfo-$version.tar.bz2)
+
+build() {
+	cd xdpyinfo-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
