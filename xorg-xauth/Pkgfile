@@ -6,7 +6,7 @@
 name=xorg-xauth
 version=1.0.1
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xauth-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/app/xauth-$version.tar.bz2)
 
 build() {
 	cd xauth-$version
