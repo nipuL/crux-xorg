@@ -1,6 +1,6 @@
 # Description: xorg driver xf86-video-dummy
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-video-dummy
 version=0.1.0.5

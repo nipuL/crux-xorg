@@ -1,6 +1,6 @@
 # Description: x.org's implementation of X11
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-server, xorg-xf86-input-mouse, xorg-xf86-input-keyboard, xorg-xf86-video-vesa, xorg-xinit, xorg-xauth, xorg-rgb, xorg-font-misc-misc, xorg-font-cursor-misc, xorg-xkbdata
 
 name=xorg

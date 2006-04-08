@@ -1,6 +1,6 @@
 # Description: Display information utility for X
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-libx11, xorg-libxext, xorg-libxtst, xorg-libxxf86vm, xorg-libxxf86dga, xorg-libxxf86misc, xorg-libxi, xorg-libxrender, xorg-libxinerama, xorg-libdmx, xorg-libxp
 
 name=xorg-xdpyinfo

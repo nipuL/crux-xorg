@@ -1,6 +1,6 @@
 # Description: xorg lib libXext
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-xproto, xorg-libx11, xorg-xextproto, xorg-libxau
 
 name=xorg-libxext

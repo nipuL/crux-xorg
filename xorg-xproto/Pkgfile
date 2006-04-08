@@ -1,6 +1,6 @@
 # Description: xorg proto xproto
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xproto
 version=7.0.4

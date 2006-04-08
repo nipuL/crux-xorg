@@ -1,6 +1,6 @@
 # Description: xorg lib libXrandr
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-libx11, xorg-randrproto, xorg-xextproto, xorg-libxext, xorg-libxrender, xorg-renderproto
 
 name=xorg-libxrandr

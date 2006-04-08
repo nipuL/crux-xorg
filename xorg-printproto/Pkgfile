@@ -1,6 +1,6 @@
 # Description: xorg proto printproto
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-printproto
 version=1.0.3

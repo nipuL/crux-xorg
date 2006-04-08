@@ -1,6 +1,6 @@
 # Description: xorg proto evieext
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-evieext
 version=1.0.2

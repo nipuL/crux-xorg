@@ -1,6 +1,6 @@
 # Description: xorg font font-bh-lucidatypewriter-100dpi
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-mkfontdir, xorg-mkfontscale
 
 name=xorg-font-bh-lucidatypewriter-100dpi

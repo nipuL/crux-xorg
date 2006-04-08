@@ -1,6 +1,6 @@
 # Description: xorg driver xf86-video-sis
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at code-monkey dot de
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-video-sis
 version=0.8.1.3
