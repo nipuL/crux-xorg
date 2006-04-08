@@ -6,7 +6,7 @@
 name=xorg-xset
 version=1.0.1
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xset-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/app/xset-$version.tar.bz2)
 
 build() {
 	cd xset-$version
