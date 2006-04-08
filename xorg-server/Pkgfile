@@ -17,7 +17,7 @@ build() {
 
 	# the package doesn't build against Mesa-6.5
 	./configure --prefix=/usr --enable-dri \
-	            --with-mesa-source=../Mesa-6.4.2 \
+	            --with-mesa-source=$SRC/Mesa-6.4.2 \
 	            --localstatedir=/var
 
 	make
