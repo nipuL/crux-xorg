@@ -11,23 +11,22 @@ source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 build() {
 	cd Mesa-$version
 
-	sed -i -e 's/define DEFAULT_DRIVER_DIR.*$/define DEFAULT_DRIVER_DIR "\/usr\/lib\/dri"/' src/glx/x11/dri_glx.c
+	cat <<EOF >> configs/linux-dri
+GLUT_LIB=m
+DEFINES += -DDEFAULT_DRIVER_DIR=\"/usr/lib/dri\"
+OPT_FLAGS = $CFLAGS
+EOF
 
-	# setting GLUT_LIB to 'm' will make it so that glxgears and glxinfo
-	# are not linked to libglut (they don't use it at all)
-	# feel free to come up with a nicer way of workind around this problem :)
-	make OPT_FLAGS="$CFLAGS" GLUT_LIB=m linux-dri-x86
+	make linux-dri-x86
 
 	pushd progs/xdemos
-	make OPT_FLAGS="$CFLAGS" GLUT_LIB=m glxgears glxinfo
+	make glxgears glxinfo
 	popd
 
-	install -d $PKG/usr/{lib,include}
+	install -d $PKG/usr/{bin,lib/dri,include}
+
 	make DESTDIR=$PKG/usr install
 
-	install -d $PKG/usr/lib/dri
-	install lib/*_dri.so $PKG/usr/lib/dri
-
-	install -d $PKG/usr/bin
+	install -m 755 lib/*_dri.so $PKG/usr/lib/dri
 	install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
 }
