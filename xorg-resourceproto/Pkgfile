@@ -5,7 +5,7 @@
 name=xorg-resourceproto
 version=1.0.2
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/resourceproto-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/proto/resourceproto-$version.tar.bz2)
 
 build() {
 	cd resourceproto-$version

@@ -5,7 +5,7 @@
 name=xorg-font-util
 version=1.0.0
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/font-util-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/font/font-util-$version.tar.bz2)
 
 build() {
 	cd font-util-$version

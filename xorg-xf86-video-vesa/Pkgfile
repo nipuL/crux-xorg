@@ -6,7 +6,7 @@
 name=xorg-xf86-video-vesa
 version=1.0.1.3
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xf86-video-vesa-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-vesa-$version.tar.bz2)
 
 build() {
 	cd xf86-video-vesa-$version

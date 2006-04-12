@@ -6,7 +6,7 @@
 name=xorg-liboldx
 version=1.0.1
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/liboldX-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/lib/liboldX-$version.tar.bz2)
 
 build() {
 	cd liboldX-$version

@@ -6,7 +6,7 @@
 name=xorg-libwindowswm
 version=1.0.0
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/libWindowsWM-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/lib/libWindowsWM-$version.tar.bz2)
 
 build() {
 	cd libWindowsWM-$version

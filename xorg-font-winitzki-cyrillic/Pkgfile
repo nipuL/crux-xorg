@@ -6,7 +6,7 @@
 name=xorg-font-winitzki-cyrillic
 version=1.0.0
 release=2
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/font-winitzki-cyrillic-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/font/font-winitzki-cyrillic-$version.tar.bz2)
 
 build() {
 	cd font-winitzki-cyrillic-$version

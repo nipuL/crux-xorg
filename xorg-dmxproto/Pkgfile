@@ -5,7 +5,7 @@
 name=xorg-dmxproto
 version=2.2.2
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/dmxproto-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/proto/dmxproto-$version.tar.bz2)
 
 build() {
 	cd dmxproto-$version

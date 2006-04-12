@@ -5,7 +5,7 @@
 name=xorg-applewmproto
 version=1.0.3
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/applewmproto-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/proto/applewmproto-$version.tar.bz2)
 
 build() {
 	cd applewmproto-$version

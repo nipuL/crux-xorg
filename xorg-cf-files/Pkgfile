@@ -5,7 +5,7 @@
 name=xorg-cf-files
 version=1.0.1
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/$name-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/util/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version

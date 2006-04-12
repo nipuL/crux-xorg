@@ -5,7 +5,7 @@
 name=xorg-xf86-video-ati
 version=6.5.7.3
 release=2
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xf86-video-ati-$version.tar.bz2 \
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-ati-$version.tar.bz2 \
         radeon-memmap-7.0-3.diff)
 
 build() {

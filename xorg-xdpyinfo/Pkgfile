@@ -6,7 +6,7 @@
 name=xorg-xdpyinfo
 version=1.0.1
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/xdpyinfo-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/app/xdpyinfo-$version.tar.bz2)
 
 build() {
 	cd xdpyinfo-$version

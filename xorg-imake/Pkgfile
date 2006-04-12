@@ -6,7 +6,7 @@
 name=xorg-imake
 version=1.0.1
 release=1
-source=(http://xorg.freedesktop.org/releases/X11R7.0/src/everything/imake-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/util/imake-$version.tar.bz2)
 
 build() {
 	cd imake-$version
