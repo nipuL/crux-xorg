@@ -3,15 +3,12 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-video-ati
-version=6.5.7.3
+version=6.5.8.0
 release=2
-source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-ati-$version.tar.bz2 \
-        radeon-memmap-7.0-3.diff)
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-ati-$version.tar.bz2)
 
 build() {
 	cd xf86-video-ati-$version
-
-	patch -Np1 -i ../radeon-memmap-7.0-3.diff
 
 	./configure --prefix=/usr
 
