@@ -4,7 +4,7 @@
 # Depends on: xorg-xproto, xorg-libx11, xorg-libxext, xorg-xf86miscproto
 
 name=xorg-libxxf86misc
-version=1.0.0
+version=1.0.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-$version.tar.bz2)
 
