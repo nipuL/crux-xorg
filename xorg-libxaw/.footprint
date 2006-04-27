@@ -76,7 +76,7 @@ drwxr-xr-x	root/root	usr/include/X11/Xaw/
 -rw-r--r--	root/root	usr/include/X11/Xaw/XawImP.h
 -rw-r--r--	root/root	usr/include/X11/Xaw/XawInit.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libXaw.so -> libXaw7.so
+lrwxrwxrwx	root/root	usr/lib/libXaw.so -> libXaw8.so
 lrwxrwxrwx	root/root	usr/lib/libXaw.so.6 -> libXaw6.so.6
 lrwxrwxrwx	root/root	usr/lib/libXaw.so.7 -> libXaw7.so.7
 lrwxrwxrwx	root/root	usr/lib/libXaw.so.8 -> libXaw8.so.8
@@ -95,13 +95,13 @@ lrwxrwxrwx	root/root	usr/lib/libXaw7.so.7 -> libXaw7.so.7.0.0
 lrwxrwxrwx	root/root	usr/lib/libXaw8.so -> libXaw8.so.8.0.0
 lrwxrwxrwx	root/root	usr/lib/libXaw8.so.8 -> libXaw8.so.8.0.0
 -rwxr-xr-x	root/root	usr/lib/libXaw8.so.8.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xaw6.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/xaw7.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/xaw8.pc
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/Xaw.3x.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/xaw.m4
-drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/xaw6.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/xaw7.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/xaw8.pc
