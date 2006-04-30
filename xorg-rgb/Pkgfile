@@ -1,7 +1,7 @@
 # Description: X Window System RGB database
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-xproto
+# Depends on: xorg-libx11
 
 name=xorg-rgb
 version=1.0.0
