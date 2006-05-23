@@ -6,6 +6,7 @@ lrwxrwxrwx	root/root	usr/bin/X -> Xorg
 -rwsr-xr-x	root/root	usr/bin/Xorg
 -rwxr-xr-x	root/root	usr/bin/Xprt
 -rwxr-xr-x	root/root	usr/bin/Xvfb
+-rwxr-xr-x	root/root	usr/bin/cvt
 -rwxr-xr-x	root/root	usr/bin/dmxaddinput
 -rwxr-xr-x	root/root	usr/bin/dmxaddscreen
 -rwxr-xr-x	root/root	usr/bin/dmxreconfig
@@ -68,7 +69,6 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/cfb32.h
 -rw-r--r--	root/root	usr/include/xorg/cfb8_16.h
 -rw-r--r--	root/root	usr/include/xorg/cfb8_32.h
--rw-r--r--	root/root	usr/include/xorg/cfb8_32wid.h
 -rw-r--r--	root/root	usr/include/xorg/cfbmap.h
 -rw-r--r--	root/root	usr/include/xorg/cfbmskbits.h
 -rw-r--r--	root/root	usr/include/xorg/cfbunmap.h
@@ -79,6 +79,8 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/compiler.h
 -rw-r--r--	root/root	usr/include/xorg/cursor.h
 -rw-r--r--	root/root	usr/include/xorg/cursorstr.h
+-rw-r--r--	root/root	usr/include/xorg/damage.h
+-rw-r--r--	root/root	usr/include/xorg/damagestr.h
 -rw-r--r--	root/root	usr/include/xorg/dbestruct.h
 -rw-r--r--	root/root	usr/include/xorg/dgaproc.h
 -rw-r--r--	root/root	usr/include/xorg/dix.h
@@ -194,8 +196,6 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/xf86_ansic.h
 -rw-r--r--	root/root	usr/include/xorg/xf86_libc.h
 -rw-r--r--	root/root	usr/include/xorg/xf86cmap.h
--rw-r--r--	root/root	usr/include/xorg/xf86drm.h
--rw-r--r--	root/root	usr/include/xorg/xf86drmCompat.h
 -rw-r--r--	root/root	usr/include/xorg/xf86fbman.h
 -rw-r--r--	root/root	usr/include/xorg/xf86i2c.h
 -rw-r--r--	root/root	usr/include/xorg/xf86int10.h
@@ -1161,8 +1161,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb16.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb16.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb24.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb24.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb32.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb32.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libddc.la
@@ -1175,8 +1173,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libi2c.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libint10.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libint10.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/liblayer.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/liblayer.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libmfb.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libmfb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libpcidata.la
@@ -1205,8 +1201,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_16bpp.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_32bpp.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_32bpp.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_32wid.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_32wid.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/linux/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libdrm.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libdrm.so
@@ -1237,6 +1231,7 @@ drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/Xprt.1x.gz
 -rw-r--r--	root/root	usr/man/man1/Xserver.1x.gz
 -rw-r--r--	root/root	usr/man/man1/Xvfb.1x.gz
+-rw-r--r--	root/root	usr/man/man1/cvt.1.gz
 -rw-r--r--	root/root	usr/man/man1/dmxtodmx.1x.gz
 -rw-r--r--	root/root	usr/man/man1/getconfig.1x.gz
 -rw-r--r--	root/root	usr/man/man1/gtf.1x.gz
