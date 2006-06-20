@@ -5,12 +5,15 @@
 
 name=xorg-server
 version=1.1.0
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2 \
+        http://xorg.freedesktop.org/releases/X11R7.1/patches/xorg-xserver-$version-setuid.diff \
         http://dl.sourceforge.net/mesa3d/MesaLib-6.5.tar.bz2)
 
 build() {
 	cd $name-$version
+
+	patch -Np0 -i $SRC/xorg-xserver-$version-setuid.diff
 
 	./configure --prefix=/usr --enable-dri \
 	            --with-mesa-source=$SRC/Mesa-6.5 \
