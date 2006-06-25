@@ -1,7 +1,7 @@
 # Description: Screen magnifier
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-xaw
+# Depends on: xorg-libxaw
 
 name=xorg-xmag
 version=1.0.1
