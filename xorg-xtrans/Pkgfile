@@ -3,15 +3,12 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xtrans
-version=1.0.0
-release=2
-source=(http://xorg.freedesktop.org/releases/individual/lib/xtrans-$version.tar.bz2 \
-        http://xorg.freedesktop.org/releases/X11R7.1/patches/xtrans-$version-setuid.diff)
+version=1.0.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/xtrans-$version.tar.bz2)
 
 build() {
 	cd xtrans-$version
-
-	patch -Np0 -i $SRC/xtrans-$version-setuid.diff
 
 	./configure --prefix=/usr
 
