@@ -4,15 +4,12 @@
 # Depends on: freetype, xorg-fontcacheproto, xorg-xproto, xorg-xtrans, xorg-fontsproto, xorg-libfontenc
 
 name=xorg-libxfont
-version=1.2.0
-release=2
-source=(http://xorg.freedesktop.org/releases/individual/lib/libXfont-$version.tar.bz2 \
-        $name.diff)
+version=1.2.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXfont-$version.tar.bz2)
 
 build() {
 	cd libXfont-$version
-
-	patch -Np1 -i $SRC/$name.diff
 
 	./configure --prefix=/usr
 
