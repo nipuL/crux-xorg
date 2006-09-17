@@ -16,6 +16,7 @@ INSTALL_DIR = $PKG/usr
 DRI_DRIVER_INSTALL_DIR = $PKG/usr/lib/dri
 DRI_DRIVER_SEARCH_DIR = /usr/lib/dri
 OPT_FLAGS = $CFLAGS
+GLUT_LIB = m
 EOF
 
 	make linux-dri-x86
