@@ -1,0 +1,21 @@
+# Description: X Window System initializer
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server
+
+name=xorg-xinit
+version=1.0.2
+release=2
+source=(http://xorg.freedesktop.org/releases/individual/app/xinit-$version.tar.bz2 \
+        http://xorg.freedesktop.org/releases/X11R7.1/patches/xinit-$version-setuid.diff)
+
+build() {
+	cd xinit-$version
+
+	patch -Np0 -i $SRC/xinit-$version-setuid.diff
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

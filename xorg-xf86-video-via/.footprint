@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libviaXvMC.la
+lrwxrwxrwx	root/root	usr/lib/libviaXvMC.so -> libviaXvMC.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libviaXvMC.so.1 -> libviaXvMC.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libviaXvMC.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libviaXvMCPro.la
+lrwxrwxrwx	root/root	usr/lib/libviaXvMCPro.so -> libviaXvMCPro.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libviaXvMCPro.so.1 -> libviaXvMCPro.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libviaXvMCPro.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/xorg/
+drwxr-xr-x	root/root	usr/lib/xorg/modules/
+drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/via_drv.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/via_drv.so
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man4/
+-rw-r--r--	root/root	usr/man/man4/via.4.gz

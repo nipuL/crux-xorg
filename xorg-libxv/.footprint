@@ -1,0 +1,35 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/X11/
+drwxr-xr-x	root/root	usr/include/X11/extensions/
+-rw-r--r--	root/root	usr/include/X11/extensions/Xvlib.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libXv.a
+-rwxr-xr-x	root/root	usr/lib/libXv.la
+lrwxrwxrwx	root/root	usr/lib/libXv.so -> libXv.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libXv.so.1 -> libXv.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libXv.so.1.0.0
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man3/
+-rw-r--r--	root/root	usr/man/man3/Xv.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvFreeAdaptorInfo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvFreeEncodingInfo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvGetPortAttribute.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvGetStill.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvGetVideo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvGrabPort.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvPortNotify.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvPutStill.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvPutVideo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvQueryAdaptors.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvQueryBestSize.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvQueryEncodings.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvQueryExtension.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvSelectPortNotify.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvSelectVideoNotify.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvSetPortAttribute.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvStopVideo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvUngrabPort.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XvVideoNotify.3x.gz
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xv.pc

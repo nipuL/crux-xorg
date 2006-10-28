@@ -1,0 +1,23 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libXss.a
+-rwxr-xr-x	root/root	usr/lib/libXss.la
+lrwxrwxrwx	root/root	usr/lib/libXss.so -> libXss.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libXss.so.1 -> libXss.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libXss.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xscrnsaver.pc
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man3/
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverAllocInfo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverGetRegistered.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverQueryExtension.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverQueryInfo.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverQueryVersion.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverRegister.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverSelectInput.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverSetAttributes.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverSuspend.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverUnregister.3x.gz
+-rw-r--r--	root/root	usr/man/man3/XScreenSaverUnsetAttributes.3x.gz
+-rw-r--r--	root/root	usr/man/man3/Xss.3x.gz

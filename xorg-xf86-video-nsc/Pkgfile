@@ -1,0 +1,17 @@
+# Description: xorg driver xf86-video-nsc
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+
+name=xorg-xf86-video-nsc
+version=2.8.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-nsc-$version.tar.bz2)
+
+build() {
+	cd xf86-video-nsc-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}

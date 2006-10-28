@@ -1,0 +1,3 @@
+If there's a compilation error regarding agpgart, run the following command:
+
+  sed -i -e 's/_LINUX_TYPES_H/_LINUX_TYPES_FOO_H_/' /usr/include/linux/types.h

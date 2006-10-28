@@ -1,0 +1,32 @@
+# Description: Mesa 3D Graphics Library
+# URL: http://www.mesa3d.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt
+
+name=mesa3d
+version=6.5.1
+release=1
+source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
+
+build() {
+	cd Mesa-$version
+
+	cat <<EOF >> configs/linux-dri
+INSTALL_DIR = $PKG/usr
+DRI_DRIVER_INSTALL_DIR = $PKG/usr/lib/dri
+DRI_DRIVER_SEARCH_DIR = /usr/lib/dri
+OPT_FLAGS = $CFLAGS
+GLUT_LIB = m
+EOF
+
+	make linux-dri-x86
+
+	pushd progs/xdemos
+	make glxgears glxinfo
+	popd
+
+	make install
+
+	install -d $PKG/usr/bin
+	install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
+}
