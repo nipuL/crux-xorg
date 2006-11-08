@@ -4,14 +4,14 @@
 # Depends on: xorg-libx11, xorg-xproto, xorg-fixesproto, xorg-xextproto
 
 name=xorg-libxfixes
-version=4.0.1
+version=4.0.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXfixes-$version.tar.bz2)
 
 build() {
 	cd libXfixes-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/man
 
 	make
 	make DESTDIR=$PKG install
