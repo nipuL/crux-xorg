@@ -1,0 +1,17 @@
+# Description: XCB X protocol descriptions
+# URL: http://xcb.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+
+name=xorg-xcb-proto
+version=1.0
+release=1
+source=(http://xcb.freedesktop.org/dist/xcb-proto-$version.tar.bz2)
+
+build() {
+	cd xcb-proto-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
