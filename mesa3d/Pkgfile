@@ -5,11 +5,14 @@
 
 name=mesa3d
 version=6.5.1
-release=2
-source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
+release=3
+source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2 \
+        $name.diff)
 
 build() {
 	cd Mesa-$version
+
+	patch -Np1 -i $SRC/$name.diff
 
 	cat <<EOF >> configs/linux-dri
 INSTALL_DIR = $PKG/usr
