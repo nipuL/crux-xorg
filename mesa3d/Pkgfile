@@ -4,15 +4,12 @@
 # Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt
 
 name=mesa3d
-version=6.5.1
-release=3
-source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2 \
-        $name.diff)
+version=6.5.2
+release=1
+source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 
 build() {
 	cd Mesa-$version
-
-	patch -Np1 -i $SRC/$name.diff
 
 	cat <<EOF >> configs/linux-dri
 INSTALL_DIR = $PKG/usr
