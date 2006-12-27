@@ -39,6 +39,7 @@ drwxr-xr-x	root/root	usr/lib/dri/
 -rwxr-xr-x	root/root	usr/lib/dri/i915_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/i915tex_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/i965_dri.so
+-rwxr-xr-x	root/root	usr/lib/dri/mach64_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/mga_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/r128_dri.so
 -rwxr-xr-x	root/root	usr/lib/dri/r200_dri.so
