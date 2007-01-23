@@ -1,0 +1,20 @@
+# Description: X keyboard configuration database
+# URL: http://www.freedesktop.org/wiki/Software_2fXKeyboardConfig
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-xkbcomp
+
+name=xkeyboard-config
+version=0.9
+release=1
+source=(http://xlibs.freedesktop.org/xkbdesc/$name-$version.tar.bz2)
+
+build() {
+	cd xkeyboard-config-$version
+
+	./configure --prefix=/usr \
+	            --with-xkb-base=/usr/share/X11/xkb \
+	            --with-xkb-rules-symlink=xorg
+
+	make
+	make DESTDIR=$PKG install
+}
