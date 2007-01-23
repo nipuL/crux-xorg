@@ -4,21 +4,21 @@
 # Depends on: libdrm, mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-libx11, xorg-liblbxutil, xorg-xf86driproto, xorg-glproto, xorg-printproto, xorg-libxdmcp, xorg-libxkbfile, xorg-libxkbui, xorg-randrproto, xorg-renderproto, xorg-fixesproto, xorg-damageproto, xorg-xcmiscproto, xorg-xextproto, xorg-xproto, xorg-xtrans, xorg-xf86miscproto, xorg-xf86vidmodeproto, xorg-xf86bigfontproto, xorg-scrnsaverproto, xorg-bigreqsproto, xorg-resourceproto, xorg-fontsproto, xorg-inputproto, xorg-xf86dgaproto, xorg-videoproto, xorg-compositeproto, xorg-trapproto, xorg-recordproto, xorg-xineramaproto, xorg-fontcacheproto, xorg-libxfont, xorg-libxau, xorg-libfontenc, xorg-libxevie, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxxf86vm, xorg-libxaw, xorg-libxmu, xorg-libxpm, xorg-libxv, xorg-libxvmc, xorg-libxrender, xorg-libxi, xorg-libxres, xorg-libxfixes, xorg-libxcomposite, xorg-libxdamage, xorg-libxinerama, xorg-libxrandr, xorg-libxtrap, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga
 
 name=xorg-server
-version=1.1.1
-release=2
+version=1.2.0
+release=1
 source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2 \
-        http://dl.sourceforge.net/mesa3d/MesaLib-6.5.tar.bz2 \
-        http://xorg.freedesktop.org/archive/X11R7.1/patches/xorg-xserver-1.1.0-dbe-render.diff)
+        http://dl.sourceforge.net/mesa3d/MesaLib-6.5.2.tar.bz2)
 
 build() {
 	cd $name-$version
 
-	patch -Np1 -i $SRC/xorg-xserver-1.1.0-dbe-render.diff
-
 	./configure --prefix=/usr --enable-dri \
-	            --with-mesa-source=$SRC/Mesa-6.5 \
-	            --localstatedir=/var
+	            --with-mesa-source=$SRC/Mesa-6.5.2 \
+	            --localstatedir=/var \
+	            --with-xkb-output=/var/lib/xkb
 
 	make
 	make DESTDIR=$PKG install
+
+	rm $PKG/usr/lib/X11/xserver/README
 }

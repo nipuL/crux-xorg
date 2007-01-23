@@ -15,8 +15,6 @@ lrwxrwxrwx	root/root	usr/bin/X -> Xorg
 -rwxr-xr-x	root/root	usr/bin/dmxrmscreen
 -rwxr-xr-x	root/root	usr/bin/dmxtodmx
 -rwxr-xr-x	root/root	usr/bin/dmxwininfo
--rwxr-xr-x	root/root	usr/bin/getconfig
--rwxr-xr-x	root/root	usr/bin/getconfig.pl
 -rwxr-xr-x	root/root	usr/bin/gtf
 lrwxrwxrwx	root/root	usr/bin/inb -> ioport
 lrwxrwxrwx	root/root	usr/bin/inl -> ioport
@@ -32,6 +30,10 @@ lrwxrwxrwx	root/root	usr/bin/outw -> ioport
 -rwxr-xr-x	root/root	usr/bin/xdmxconfig
 -rwxr-xr-x	root/root	usr/bin/xorgcfg
 -rwxr-xr-x	root/root	usr/bin/xorgconfig
+drwxr-xr-x	root/root	usr/etc/
+drwxr-xr-x	root/root	usr/etc/X11/
+drwxr-xr-x	root/root	usr/etc/X11/Xsession.d/
+-rw-r--r--	root/root	usr/etc/X11/Xsession.d/92xprint-xpserverlist
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/X11/
 drwxr-xr-x	root/root	usr/include/X11/bitmaps/
@@ -92,7 +94,6 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/dri.h
 -rw-r--r--	root/root	usr/include/xorg/dristruct.h
 -rw-r--r--	root/root	usr/include/xorg/edid.h
--rw-r--r--	root/root	usr/include/xorg/elf.h
 -rw-r--r--	root/root	usr/include/xorg/exa.h
 -rw-r--r--	root/root	usr/include/xorg/exevents.h
 -rw-r--r--	root/root	usr/include/xorg/extension.h
@@ -213,9 +214,6 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/X11/
 -rw-r--r--	root/root	usr/lib/X11/Cards
 -rw-r--r--	root/root	usr/lib/X11/Options
-drwxr-xr-x	root/root	usr/lib/X11/getconfig/
--rw-r--r--	root/root	usr/lib/X11/getconfig/cfg.sample
--rw-r--r--	root/root	usr/lib/X11/getconfig/xorg.cfg
 drwxr-xr-x	root/root	usr/lib/X11/xserver/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/
@@ -404,7 +402,7 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4family/fonts/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4family/model-config
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PS2PDFspooldir-GS/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PS2PDFspooldir-GS/model-config
--rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PS2PDFspooldir-GS/ps2pdf_spooltodir.sh
+-rwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PS2PDFspooldir-GS/ps2pdf_spooltodir.sh
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-Book.pmf
@@ -424,7 +422,6 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-Demi.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-DemiOblique.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Bold.pmf
--rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-BoldItalic.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Italic.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Roman.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Demi.pmf
@@ -441,7 +438,7 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/model-config
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSspooldir/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSspooldir/model-config
--rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSspooldir/spooltodir.sh
+-rwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSspooldir/spooltodir.sh
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/
 lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Bold.pmf
@@ -1149,8 +1146,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libxtrap.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libxtrap.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
--rwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/libbitmap.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/libbitmap.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/libfreetype.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/libfreetype.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/libtype1.la
@@ -1159,8 +1154,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libafb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb16.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb16.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb32.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb32.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libddc.la
@@ -1177,8 +1170,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libmfb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libpcidata.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libpcidata.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/librac.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/librac.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libramdac.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libramdac.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libscanpci.la
@@ -1202,8 +1193,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_32bpp.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_32bpp.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/linux/
--rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libdrm.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libdrm.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libfbdevhw.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libfbdevhw.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/multimedia/
@@ -1225,35 +1214,34 @@ drwxr-xr-x	root/root	usr/lib/xserver/
 -rw-r--r--	root/root	usr/lib/xserver/SecurityPolicy
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/Xdmx.1x.gz
--rw-r--r--	root/root	usr/man/man1/Xnest.1x.gz
--rw-r--r--	root/root	usr/man/man1/Xorg.1x.gz
--rw-r--r--	root/root	usr/man/man1/Xprt.1x.gz
--rw-r--r--	root/root	usr/man/man1/Xserver.1x.gz
--rw-r--r--	root/root	usr/man/man1/Xvfb.1x.gz
+-rw-r--r--	root/root	usr/man/man1/Xdmx.1.gz
+-rw-r--r--	root/root	usr/man/man1/Xnest.1.gz
+-rw-r--r--	root/root	usr/man/man1/Xorg.1.gz
+-rw-r--r--	root/root	usr/man/man1/Xprt.1.gz
+-rw-r--r--	root/root	usr/man/man1/Xserver.1.gz
+-rw-r--r--	root/root	usr/man/man1/Xvfb.1.gz
 -rw-r--r--	root/root	usr/man/man1/cvt.1.gz
--rw-r--r--	root/root	usr/man/man1/dmxtodmx.1x.gz
--rw-r--r--	root/root	usr/man/man1/getconfig.1x.gz
--rw-r--r--	root/root	usr/man/man1/gtf.1x.gz
--rw-r--r--	root/root	usr/man/man1/pcitweak.1x.gz
--rw-r--r--	root/root	usr/man/man1/scanpci.1x.gz
--rw-r--r--	root/root	usr/man/man1/vdltodmx.1x.gz
--rw-r--r--	root/root	usr/man/man1/xdmxconfig.1x.gz
--rw-r--r--	root/root	usr/man/man1/xorgcfg.1x.gz
--rw-r--r--	root/root	usr/man/man1/xorgconfig.1x.gz
+-rw-r--r--	root/root	usr/man/man1/dmxtodmx.1.gz
+-rw-r--r--	root/root	usr/man/man1/gtf.1.gz
+-rw-r--r--	root/root	usr/man/man1/pcitweak.1.gz
+-rw-r--r--	root/root	usr/man/man1/scanpci.1.gz
+-rw-r--r--	root/root	usr/man/man1/vdltodmx.1.gz
+-rw-r--r--	root/root	usr/man/man1/xdmxconfig.1.gz
+-rw-r--r--	root/root	usr/man/man1/xorgcfg.1.gz
+-rw-r--r--	root/root	usr/man/man1/xorgconfig.1.gz
 drwxr-xr-x	root/root	usr/man/man4/
+-rw-r--r--	root/root	usr/man/man4/exa.4.gz
 -rw-r--r--	root/root	usr/man/man4/fbdevhw.4.gz
 drwxr-xr-x	root/root	usr/man/man5/
--rw-r--r--	root/root	usr/man/man5/getconfig.5x.gz
--rw-r--r--	root/root	usr/man/man5/xorg.conf.5x.gz
+-rw-r--r--	root/root	usr/man/man5/xorg.conf.5.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/X11/
 drwxr-xr-x	root/root	usr/share/X11/app-defaults/
 -rw-r--r--	root/root	usr/share/X11/app-defaults/XOrgCfg
-drwxr-xr-x	root/root	usr/share/X11/xkb/
-drwxr-xr-x	root/root	usr/share/X11/xkb/compiled/
--rw-r--r--	root/root	usr/share/X11/xkb/compiled/README.compiled
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/xorg-server.m4
 drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/xkb/
+-rw-r--r--	root/root	var/lib/xkb/README.compiled
 drwxr-xr-x	root/root	var/log/
