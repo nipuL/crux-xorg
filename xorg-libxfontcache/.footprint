@@ -7,11 +7,11 @@ lrwxrwxrwx	root/root	usr/lib/libXfontcache.so.1 -> libXfontcache.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libXfontcache.so.1.0.0
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man3/
--rw-r--r--	root/root	usr/man/man3/FontCacheChangeCacheSettings.3x.gz
--rw-r--r--	root/root	usr/man/man3/FontCacheGetCacheSettings.3x.gz
--rw-r--r--	root/root	usr/man/man3/FontCacheGetCacheStatistics.3x.gz
--rw-r--r--	root/root	usr/man/man3/FontCacheQueryExtension.3x.gz
--rw-r--r--	root/root	usr/man/man3/FontCacheQueryVersion.3x.gz
--rw-r--r--	root/root	usr/man/man3/Xfontcache.3x.gz
+-rw-r--r--	root/root	usr/man/man3/FontCacheChangeCacheSettings.3.gz
+-rw-r--r--	root/root	usr/man/man3/FontCacheGetCacheSettings.3.gz
+-rw-r--r--	root/root	usr/man/man3/FontCacheGetCacheStatistics.3.gz
+-rw-r--r--	root/root	usr/man/man3/FontCacheQueryExtension.3.gz
+-rw-r--r--	root/root	usr/man/man3/FontCacheQueryVersion.3.gz
+-rw-r--r--	root/root	usr/man/man3/Xfontcache.3.gz
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xfontcache.pc
