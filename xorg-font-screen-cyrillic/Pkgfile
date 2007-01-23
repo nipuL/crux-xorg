@@ -4,8 +4,8 @@
 # Depends on: xorg-mkfontdir, xorg-mkfontscale
 
 name=xorg-font-screen-cyrillic
-version=1.0.0
-release=2
+version=1.0.1
+release=1
 source=(http://xorg.freedesktop.org/releases/individual/font/font-screen-cyrillic-$version.tar.bz2)
 
 build() {
