@@ -4,14 +4,14 @@
 # Depends on: xorg-libxrender, freetype, fontconfig
 
 name=xorg-libxft
-version=2.1.10
+version=2.1.12
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXft-$version.tar.bz2)
 
 build() {
 	cd libXft-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/man
 
 	make
 	make DESTDIR=$PKG install
