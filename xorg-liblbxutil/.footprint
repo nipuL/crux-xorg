@@ -1,9 +1,0 @@
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/liblbxutil.a
--rwxr-xr-x	root/root	usr/lib/liblbxutil.la
-lrwxrwxrwx	root/root	usr/lib/liblbxutil.so -> liblbxutil.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/liblbxutil.so.1 -> liblbxutil.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/liblbxutil.so.1.0.0
-drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/lbxutil.pc
