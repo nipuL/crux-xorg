@@ -4,15 +4,12 @@
 # Depends on: xorg-server
 
 name=xorg-xinit
-version=1.0.2
-release=2
-source=(http://xorg.freedesktop.org/releases/individual/app/xinit-$version.tar.bz2 \
-        http://xorg.freedesktop.org/releases/X11R7.1/patches/xinit-$version-setuid.diff)
+version=1.0.3
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/app/xinit-$version.tar.bz2)
 
 build() {
 	cd xinit-$version
-
-	patch -Np0 -i $SRC/xinit-$version-setuid.diff
 
 	./configure --prefix=/usr
 
