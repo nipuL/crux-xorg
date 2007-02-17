@@ -1,7 +1,7 @@
 # Description: X keyboard configuration database
 # URL: http://www.freedesktop.org/wiki/Software_2fXKeyboardConfig
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-xkbcomp
+# Depends on: xorg-xkbcomp, p5-xml-parser
 
 name=xkeyboard-config
 version=0.9
