@@ -1244,4 +1244,3 @@ drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/xkb/
 -rw-r--r--	root/root	var/lib/xkb/README.compiled
-drwxr-xr-x	root/root	var/log/
