@@ -4,14 +4,14 @@
 # Depends on: xorg-libx11, xorg-xextproto, xorg-libxext, xorg-xineramaproto
 
 name=xorg-libxinerama
-version=1.0.1
+version=1.0.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXinerama-$version.tar.bz2)
 
 build() {
 	cd libXinerama-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/man
 
 	make
 	make DESTDIR=$PKG install
