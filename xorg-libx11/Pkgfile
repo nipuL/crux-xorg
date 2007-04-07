@@ -5,11 +5,14 @@
 
 name=xorg-libx11
 version=1.1.1
-release=1
-source=(http://xorg.freedesktop.org/releases/individual/lib/libX11-$version.tar.bz2)
+release=2
+source=(http://xorg.freedesktop.org/releases/individual/lib/libX11-$version.tar.bz2 \
+        http://xorg.freedesktop.org/archive/X11R7.2/patches/xorg-libX11-$version-xinitimage.diff)
 
 build() {
 	cd libX11-$version
+
+	patch -Np1 -i $SRC/xorg-libX11-$version-xinitimage.diff
 
 	./configure --prefix=/usr --mandir=/usr/man
 
