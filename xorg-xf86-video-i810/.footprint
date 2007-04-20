@@ -7,8 +7,18 @@ lrwxrwxrwx	root/root	usr/lib/libI810XvMC.so.1 -> libI810XvMC.so.1.0.0
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
--rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/i810_drv.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/i810_drv.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ch7017.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ch7017.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ch7xxx.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ch7xxx.so
+lrwxrwxrwx	root/root	usr/lib/xorg/modules/drivers/i810_drv.so -> intel_drv.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/intel_drv.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/intel_drv.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ivch.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ivch.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/sil164.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/sil164.so
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man4/
 -rw-r--r--	root/root	usr/man/man4/i810.4.gz
+-rw-r--r--	root/root	usr/man/man4/intel.4.gz
