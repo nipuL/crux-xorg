@@ -3,7 +3,7 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-randrproto
-version=1.1.2
+version=1.2.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/randrproto-$version.tar.bz2)
 
@@ -14,4 +14,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share
 }
