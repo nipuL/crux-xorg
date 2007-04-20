@@ -177,18 +177,25 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/xf1bpp.h
 -rw-r--r--	root/root	usr/include/xorg/xf4bpp.h
 -rw-r--r--	root/root	usr/include/xorg/xf86.h
+-rw-r--r--	root/root	usr/include/xorg/xf86Crtc.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Cursor.h
 -rw-r--r--	root/root	usr/include/xorg/xf86DDC.h
+-rw-r--r--	root/root	usr/include/xorg/xf86Keymap.h
+-rw-r--r--	root/root	usr/include/xorg/xf86Modes.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Module.h
 -rw-r--r--	root/root	usr/include/xorg/xf86OSKbd.h
 -rw-r--r--	root/root	usr/include/xorg/xf86OSmouse.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Opt.h
+-rw-r--r--	root/root	usr/include/xorg/xf86Optrec.h
+-rw-r--r--	root/root	usr/include/xorg/xf86Parser.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Pci.h
 -rw-r--r--	root/root	usr/include/xorg/xf86PciInfo.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Priv.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Privstr.h
 -rw-r--r--	root/root	usr/include/xorg/xf86RAC.h
 -rw-r--r--	root/root	usr/include/xorg/xf86RamDac.h
+-rw-r--r--	root/root	usr/include/xorg/xf86RandR12.h
+-rw-r--r--	root/root	usr/include/xorg/xf86Rename.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Resources.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Version.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Xinput.h
@@ -232,36 +239,36 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/CANONBJ10E-GS/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/CANONBJ10E-GS/model-config
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-Book.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-Book.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-BookOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-BookOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-Demi.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-Demi.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-DemiOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-DemiOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier-BoldOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-BoldOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier-Oblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Oblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica-BoldOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-BoldOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica-Oblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-Oblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-Book.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-Book.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-BookOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-BookOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-Demi.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-Demi.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-DemiOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-DemiOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCenturySchlbk-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCenturySchlbk-BoldItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-BoldItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCenturySchlbk-Italic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Italic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCenturySchlbk-Roman.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Roman.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-Demi.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Demi.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-DemiItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-DemiItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-Light.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Light.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-LightItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-LightItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Symbol.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Symbol.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-BoldItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-BoldItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-Italic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Italic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-Roman.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Roman.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/ZapfDingbats.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/ZapfDingbats.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-Book.pmf -> ../../PSdefault/fonts/AvantGarde-Book.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-BookOblique.pmf -> ../../PSdefault/fonts/AvantGarde-BookOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-Demi.pmf -> ../../PSdefault/fonts/AvantGarde-Demi.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/AvantGarde-DemiOblique.pmf -> ../../PSdefault/fonts/AvantGarde-DemiOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier-Bold.pmf -> ../../PSdefault/fonts/Courier-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier-BoldOblique.pmf -> ../../PSdefault/fonts/Courier-BoldOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier-Oblique.pmf -> ../../PSdefault/fonts/Courier-Oblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Courier.pmf -> ../../PSdefault/fonts/Courier.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica-Bold.pmf -> ../../PSdefault/fonts/Helvetica-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica-BoldOblique.pmf -> ../../PSdefault/fonts/Helvetica-BoldOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica-Oblique.pmf -> ../../PSdefault/fonts/Helvetica-Oblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Helvetica.pmf -> ../../PSdefault/fonts/Helvetica.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-Book.pmf -> ../../PSdefault/fonts/LubalinGraph-Book.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-BookOblique.pmf -> ../../PSdefault/fonts/LubalinGraph-BookOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-Demi.pmf -> ../../PSdefault/fonts/LubalinGraph-Demi.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/LubalinGraph-DemiOblique.pmf -> ../../PSdefault/fonts/LubalinGraph-DemiOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCentSchlbk-Bold.pmf -> ../../PSdefault/fonts/NewCentSchlbk-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCentSchlbk-BoldItal.pmf -> ../../PSdefault/fonts/NewCentSchlbk-BoldItal.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCentSchlbk-Ital.pmf -> ../../PSdefault/fonts/NewCentSchlbk-Ital.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/NewCentSchlbk-Roman.pmf -> ../../PSdefault/fonts/NewCentSchlbk-Roman.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-Demi.pmf -> ../../PSdefault/fonts/Souvenir-Demi.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-DemiItalic.pmf -> ../../PSdefault/fonts/Souvenir-DemiItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-Light.pmf -> ../../PSdefault/fonts/Souvenir-Light.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Souvenir-LightItalic.pmf -> ../../PSdefault/fonts/Souvenir-LightItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Symbol.pmf -> ../../PSdefault/fonts/Symbol.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-Bold.pmf -> ../../PSdefault/fonts/Times-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-BoldItalic.pmf -> ../../PSdefault/fonts/Times-BoldItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-Italic.pmf -> ../../PSdefault/fonts/Times-Italic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/Times-Roman.pmf -> ../../PSdefault/fonts/Times-Roman.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/ZapfDingbats.pmf -> ../../PSdefault/fonts/ZapfDingbats.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/fonts/fonts.dir
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/CANONC3200-PS/model-config
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/GSdefault/
@@ -318,36 +325,36 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/HPDJ1600C/fonts/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/HPDJ1600C/model-config
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-Book.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-Book.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-BookOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-BookOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-Demi.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-Demi.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-DemiOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/AvantGarde-DemiOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier-BoldOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-BoldOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier-Oblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Oblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica-BoldOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-BoldOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica-Oblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-Oblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-Book.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-Book.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-BookOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-BookOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-Demi.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-Demi.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-DemiOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-DemiOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCenturySchlbk-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCenturySchlbk-BoldItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-BoldItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCenturySchlbk-Italic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Italic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCenturySchlbk-Roman.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Roman.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-Demi.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Demi.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-DemiItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-DemiItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-Light.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Light.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-LightItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-LightItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Symbol.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Symbol.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-BoldItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-BoldItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-Italic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Italic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-Roman.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Roman.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/ZapfDingbats.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/ZapfDingbats.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-Book.pmf -> ../../PSdefault/fonts/AvantGarde-Book.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-BookOblique.pmf -> ../../PSdefault/fonts/AvantGarde-BookOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-Demi.pmf -> ../../PSdefault/fonts/AvantGarde-Demi.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/AvantGarde-DemiOblique.pmf -> ../../PSdefault/fonts/AvantGarde-DemiOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier-Bold.pmf -> ../../PSdefault/fonts/Courier-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier-BoldOblique.pmf -> ../../PSdefault/fonts/Courier-BoldOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier-Oblique.pmf -> ../../PSdefault/fonts/Courier-Oblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Courier.pmf -> ../../PSdefault/fonts/Courier.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica-Bold.pmf -> ../../PSdefault/fonts/Helvetica-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica-BoldOblique.pmf -> ../../PSdefault/fonts/Helvetica-BoldOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica-Oblique.pmf -> ../../PSdefault/fonts/Helvetica-Oblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Helvetica.pmf -> ../../PSdefault/fonts/Helvetica.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-Book.pmf -> ../../PSdefault/fonts/LubalinGraph-Book.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-BookOblique.pmf -> ../../PSdefault/fonts/LubalinGraph-BookOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-Demi.pmf -> ../../PSdefault/fonts/LubalinGraph-Demi.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/LubalinGraph-DemiOblique.pmf -> ../../PSdefault/fonts/LubalinGraph-DemiOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCentSchlbk-Bold.pmf -> ../../PSdefault/fonts/NewCentSchlbk-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCentSchlbk-BoldItal.pmf -> ../../PSdefault/fonts/NewCentSchlbk-BoldItal.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCentSchlbk-Ital.pmf -> ../../PSdefault/fonts/NewCentSchlbk-Ital.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/NewCentSchlbk-Roman.pmf -> ../../PSdefault/fonts/NewCentSchlbk-Roman.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-Demi.pmf -> ../../PSdefault/fonts/Souvenir-Demi.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-DemiItalic.pmf -> ../../PSdefault/fonts/Souvenir-DemiItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-Light.pmf -> ../../PSdefault/fonts/Souvenir-Light.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Souvenir-LightItalic.pmf -> ../../PSdefault/fonts/Souvenir-LightItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Symbol.pmf -> ../../PSdefault/fonts/Symbol.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-Bold.pmf -> ../../PSdefault/fonts/Times-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-BoldItalic.pmf -> ../../PSdefault/fonts/Times-BoldItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-Italic.pmf -> ../../PSdefault/fonts/Times-Italic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/Times-Roman.pmf -> ../../PSdefault/fonts/Times-Roman.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/ZapfDingbats.pmf -> ../../PSdefault/fonts/ZapfDingbats.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/fonts/fonts.dir
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4050-PS/model-config
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/HPLJ4family/
@@ -421,9 +428,10 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-BookOblique.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-Demi.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/LubalinGraph-DemiOblique.pmf
--rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Bold.pmf
--rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Italic.pmf
--rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCenturySchlbk-Roman.pmf
+-rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCentSchlbk-Bold.pmf
+-rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCentSchlbk-BoldItal.pmf
+-rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCentSchlbk-Ital.pmf
+-rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/NewCentSchlbk-Roman.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Demi.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-DemiItalic.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Souvenir-Light.pmf
@@ -441,19 +449,19 @@ drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSspooldir/
 -rwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/PSspooldir/spooltodir.sh
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/
 drwxr-xr-x	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-BoldOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-BoldOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-Oblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier-Oblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Courier.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica-BoldOblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-BoldOblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica-Oblique.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica-Oblique.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Helvetica.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Symbol.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Symbol.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Bold.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Bold.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-BoldItalic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-BoldItalic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Italic.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Italic.pmf
-lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Roman.pmf -> /usr/lib/X11/xserver/C/print/models/PSdefault/fonts/Times-Roman.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-Bold.pmf -> ../../PSdefault/fonts/Courier-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-BoldOblique.pmf -> ../../PSdefault/fonts/Courier-BoldOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier-Oblique.pmf -> ../../PSdefault/fonts/Courier-Oblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Courier.pmf -> ../../PSdefault/fonts/Courier.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica-Bold.pmf -> ../../PSdefault/fonts/Helvetica-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica-BoldOblique.pmf -> ../../PSdefault/fonts/Helvetica-BoldOblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica-Oblique.pmf -> ../../PSdefault/fonts/Helvetica-Oblique.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Helvetica.pmf -> ../../PSdefault/fonts/Helvetica.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Symbol.pmf -> ../../PSdefault/fonts/Symbol.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Bold.pmf -> ../../PSdefault/fonts/Times-Bold.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-BoldItalic.pmf -> ../../PSdefault/fonts/Times-BoldItalic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Italic.pmf -> ../../PSdefault/fonts/Times-Italic.pmf
+lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Roman.pmf -> ../../PSdefault/fonts/Times-Roman.pmf
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/fonts.dir
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/model-config
 lrwxrwxrwx	root/root	usr/lib/X11/xserver/POSIX -> C
@@ -1156,22 +1164,16 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb32.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libcfb32.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libddc.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libddc.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libexa.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libexa.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libfb.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libfb.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libi2c.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libi2c.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libint10.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libint10.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libmfb.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libmfb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libpcidata.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libpcidata.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libramdac.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/libramdac.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libscanpci.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libscanpci.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libshadow.la
