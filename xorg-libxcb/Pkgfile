@@ -5,11 +5,14 @@
 
 name=xorg-libxcb
 version=1.0
-release=1
+release=2
 source=(http://xcb.freedesktop.org/dist/libxcb-$version.tar.bz2)
 
 build() {
 	cd libxcb-$version
+
+	# remove locking assertions
+	sed -i -e '41d' -e '50d' src/xcb_xlib.c
 
 	./configure --prefix=/usr --disable-build-docs
 
