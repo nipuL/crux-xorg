@@ -1,7 +1,7 @@
 # Description: xorg driver xf86-input-vmmouse
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-server, xorg-xproto
+# Depends on: xorg-server
 
 name=xorg-xf86-input-vmmouse
 version=12.4.1
