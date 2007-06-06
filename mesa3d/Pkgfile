@@ -4,8 +4,8 @@
 # Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt
 
 name=mesa3d
-version=6.5.2
-release=2
+version=6.5.3
+release=1
 source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 
 build() {
@@ -18,6 +18,9 @@ DRI_DRIVER_SEARCH_DIR = /usr/lib/dri
 OPT_FLAGS = $CFLAGS
 GLUT_LIB = m
 EOF
+
+	# nouveau is broken w/ libdrm 2.3.0
+	sed -i -e 's/nouveau//' configs/linux-dri
 
 	make linux-dri-x86
 
