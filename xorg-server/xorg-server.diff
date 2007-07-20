@@ -33,3 +33,84 @@ index 1db27f1..2a57e4e 100644
 -- 
 1.5.2
 
+From bbb3db4eeb66ea7dcbafcf3f73e7c753a6db4ac2 Mon Sep 17 00:00:00 2001
+From: Julien Cristau <jcristau@debian.org>
+Date: Thu, 10 May 2007 17:26:49 +0200
+Subject: [PATCH] Export ramdac symbols
+
+The former ramdac module is now built into the server, so its symbols need to
+be explicitly exported to drivers (Debian #423129).
+---
+ hw/xfree86/loader/xf86sym.c |   51 +++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 51 insertions(+), 0 deletions(-)
+
+diff --git a/hw/xfree86/loader/xf86sym.c b/hw/xfree86/loader/xf86sym.c
+index 5175f01..6535e4c 100644
+--- a/hw/xfree86/loader/xf86sym.c
++++ b/hw/xfree86/loader/xf86sym.c
+@@ -96,6 +96,11 @@
+ #endif
+ #include "xf86DDC.h"
+ #include "edid.h"
++#include "xf86Cursor.h"
++#include "xf86RamDac.h"
++#include "BT.h"
++#include "IBM.h"
++#include "TI.h"
+ 
+ #ifndef HAS_GLIBC_SIGSETJMP
+ #if defined(setjmp) && defined(__GNU_LIBRARY__) && \
+@@ -1255,4 +1260,50 @@ _X_HIDDEN void *xfree86LookupTab[] = {
+     SYMFUNC(xf86I2CWriteRead)
+     SYMFUNC(xf86I2CWriteVec)
+     SYMFUNC(xf86I2CWriteWord)
++
++    /* ramdac/xf86RamDac.c */
++    SYMFUNC(RamDacCreateInfoRec)
++    SYMFUNC(RamDacHelperCreateInfoRec)
++    SYMFUNC(RamDacDestroyInfoRec)
++    SYMFUNC(RamDacHelperDestroyInfoRec)
++    SYMFUNC(RamDacInit)
++    SYMFUNC(RamDacHandleColormaps)
++    SYMFUNC(RamDacFreeRec)
++    SYMFUNC(RamDacGetHWIndex)
++    SYMVAR(RamDacHWPrivateIndex)
++    SYMVAR(RamDacScreenPrivateIndex)
++
++    /* ramdac/xf86Cursor.c */
++    SYMFUNC(xf86InitCursor)
++    SYMFUNC(xf86CreateCursorInfoRec)
++    SYMFUNC(xf86DestroyCursorInfoRec)
++    SYMFUNC(xf86ForceHWCursor)
++
++    /* ramdac/BT.c */
++    SYMFUNC(BTramdacProbe)
++    SYMFUNC(BTramdacSave)
++    SYMFUNC(BTramdacRestore)
++    SYMFUNC(BTramdacSetBpp)
++
++    /* ramdac/IBM.c */
++    SYMFUNC(IBMramdacProbe)
++    SYMFUNC(IBMramdacSave)
++    SYMFUNC(IBMramdacRestore)
++    SYMFUNC(IBMramdac526SetBpp)
++    SYMFUNC(IBMramdac640SetBpp)
++    SYMFUNC(IBMramdac526CalculateMNPCForClock)
++    SYMFUNC(IBMramdac640CalculateMNPCForClock)
++    SYMFUNC(IBMramdac526HWCursorInit)
++    SYMFUNC(IBMramdac640HWCursorInit)
++    SYMFUNC(IBMramdac526SetBppWeak)
++
++    /* ramdac/TI.c */
++    SYMFUNC(TIramdacCalculateMNPForClock)
++    SYMFUNC(TIramdacProbe)
++    SYMFUNC(TIramdacSave)
++    SYMFUNC(TIramdacRestore)
++    SYMFUNC(TIramdac3026SetBpp)
++    SYMFUNC(TIramdac3030SetBpp)
++    SYMFUNC(TIramdacHWCursorInit)
++    SYMFUNC(TIramdacLoadPalette)
+ };
+-- 
+1.5.1.4
+
