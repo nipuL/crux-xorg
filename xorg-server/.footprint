@@ -28,33 +28,12 @@ lrwxrwxrwx	root/root	usr/bin/outw -> ioport
 -rwxr-xr-x	root/root	usr/bin/vdltodmx
 -rwxr-xr-x	root/root	usr/bin/xdmx
 -rwxr-xr-x	root/root	usr/bin/xdmxconfig
--rwxr-xr-x	root/root	usr/bin/xorgcfg
 -rwxr-xr-x	root/root	usr/bin/xorgconfig
 drwxr-xr-x	root/root	usr/etc/
 drwxr-xr-x	root/root	usr/etc/X11/
 drwxr-xr-x	root/root	usr/etc/X11/Xsession.d/
 -rw-r--r--	root/root	usr/etc/X11/Xsession.d/92xprint-xpserverlist
 drwxr-xr-x	root/root	usr/include/
-drwxr-xr-x	root/root	usr/include/X11/
-drwxr-xr-x	root/root	usr/include/X11/bitmaps/
--rw-r--r--	root/root	usr/include/X11/bitmaps/card.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/down.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/keyboard.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/left.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/monitor.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/mouse.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/narrower.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/right.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/shorter.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/taller.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/up.xbm
--rw-r--r--	root/root	usr/include/X11/bitmaps/wider.xbm
-drwxr-xr-x	root/root	usr/include/X11/pixmaps/
--rw-r--r--	root/root	usr/include/X11/pixmaps/card.xpm
--rw-r--r--	root/root	usr/include/X11/pixmaps/computer.xpm
--rw-r--r--	root/root	usr/include/X11/pixmaps/keyboard.xpm
--rw-r--r--	root/root	usr/include/X11/pixmaps/monitor.xpm
--rw-r--r--	root/root	usr/include/X11/pixmaps/mouse.xpm
 drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/BT.h
 -rw-r--r--	root/root	usr/include/xorg/IBM.h
@@ -110,6 +89,7 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/gcstruct.h
 -rw-r--r--	root/root	usr/include/xorg/globals.h
 -rw-r--r--	root/root	usr/include/xorg/glyphstr.h
+-rw-r--r--	root/root	usr/include/xorg/hotplug.h
 -rw-r--r--	root/root	usr/include/xorg/i2c_def.h
 -rw-r--r--	root/root	usr/include/xorg/input.h
 -rw-r--r--	root/root	usr/include/xorg/inputstr.h
@@ -166,8 +146,8 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/validate.h
 -rw-r--r--	root/root	usr/include/xorg/vbe.h
 -rw-r--r--	root/root	usr/include/xorg/vbeModes.h
--rw-r--r--	root/root	usr/include/xorg/vdif.h
 -rw-r--r--	root/root	usr/include/xorg/vgaHW.h
+-rw-r--r--	root/root	usr/include/xorg/wfbrename.h
 -rw-r--r--	root/root	usr/include/xorg/window.h
 -rw-r--r--	root/root	usr/include/xorg/windowstr.h
 -rw-r--r--	root/root	usr/include/xorg/xaa.h
@@ -180,10 +160,8 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/xf86Crtc.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Cursor.h
 -rw-r--r--	root/root	usr/include/xorg/xf86DDC.h
--rw-r--r--	root/root	usr/include/xorg/xf86Keymap.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Modes.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Module.h
--rw-r--r--	root/root	usr/include/xorg/xf86OSKbd.h
 -rw-r--r--	root/root	usr/include/xorg/xf86OSmouse.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Opt.h
 -rw-r--r--	root/root	usr/include/xorg/xf86Optrec.h
@@ -213,6 +191,7 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/xf86xvmc.h
 -rw-r--r--	root/root	usr/include/xorg/xf86xvpriv.h
 -rw-r--r--	root/root	usr/include/xorg/xisb.h
+-rw-r--r--	root/root	usr/include/xorg/xkbsrv.h
 -rw-r--r--	root/root	usr/include/xorg/xorg-server.h
 -rw-r--r--	root/root	usr/include/xorg/xorgVersion.h
 -rw-r--r--	root/root	usr/include/xorg/xvdix.h
@@ -465,6 +444,7 @@ lrwxrwxrwx	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/Times-Rom
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/fonts/fonts.dir
 -rw-r--r--	root/root	usr/lib/X11/xserver/C/print/models/SPSPARC2/model-config
 lrwxrwxrwx	root/root	usr/lib/X11/xserver/POSIX -> C
+-rw-r--r--	root/root	usr/lib/X11/xserver/README
 lrwxrwxrwx	root/root	usr/lib/X11/xserver/af_ZA -> C
 lrwxrwxrwx	root/root	usr/lib/X11/xserver/af_ZA.iso88591 -> C
 lrwxrwxrwx	root/root	usr/lib/X11/xserver/ar -> C
@@ -1184,6 +1164,8 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/fonts/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libvbe.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libvgahw.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libvgahw.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/libwfb.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/libwfb.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxaa.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxaa.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf1bpp.la
@@ -1229,17 +1211,14 @@ drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/scanpci.1.gz
 -rw-r--r--	root/root	usr/man/man1/vdltodmx.1.gz
 -rw-r--r--	root/root	usr/man/man1/xdmxconfig.1.gz
--rw-r--r--	root/root	usr/man/man1/xorgcfg.1.gz
 -rw-r--r--	root/root	usr/man/man1/xorgconfig.1.gz
 drwxr-xr-x	root/root	usr/man/man4/
 -rw-r--r--	root/root	usr/man/man4/exa.4.gz
 -rw-r--r--	root/root	usr/man/man4/fbdevhw.4.gz
 drwxr-xr-x	root/root	usr/man/man5/
+-rw-r--r--	root/root	usr/man/man5/SecurityPolicy.5.gz
 -rw-r--r--	root/root	usr/man/man5/xorg.conf.5.gz
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/X11/
-drwxr-xr-x	root/root	usr/share/X11/app-defaults/
--rw-r--r--	root/root	usr/share/X11/app-defaults/XOrgCfg
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/xorg-server.m4
 drwxr-xr-x	root/root	var/
