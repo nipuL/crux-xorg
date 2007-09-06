@@ -3,7 +3,7 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-inputproto
-version=1.3.2
+version=1.4.2.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/inputproto-$version.tar.bz2)
 
