@@ -1,19 +1,10 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/X -> Xorg
--rwxr-xr-x	root/root	usr/bin/Xdmx
 -rwxr-xr-x	root/root	usr/bin/Xnest
 -rwsr-xr-x	root/root	usr/bin/Xorg
 -rwxr-xr-x	root/root	usr/bin/Xvfb
 -rwxr-xr-x	root/root	usr/bin/cvt
--rwxr-xr-x	root/root	usr/bin/dmxaddinput
--rwxr-xr-x	root/root	usr/bin/dmxaddscreen
--rwxr-xr-x	root/root	usr/bin/dmxreconfig
--rwxr-xr-x	root/root	usr/bin/dmxresize
--rwxr-xr-x	root/root	usr/bin/dmxrminput
--rwxr-xr-x	root/root	usr/bin/dmxrmscreen
--rwxr-xr-x	root/root	usr/bin/dmxtodmx
--rwxr-xr-x	root/root	usr/bin/dmxwininfo
 -rwxr-xr-x	root/root	usr/bin/gtf
 lrwxrwxrwx	root/root	usr/bin/inb -> ioport
 lrwxrwxrwx	root/root	usr/bin/inl -> ioport
@@ -24,9 +15,6 @@ lrwxrwxrwx	root/root	usr/bin/outl -> ioport
 lrwxrwxrwx	root/root	usr/bin/outw -> ioport
 -rwxr-xr-x	root/root	usr/bin/pcitweak
 -rwxr-xr-x	root/root	usr/bin/scanpci
--rwxr-xr-x	root/root	usr/bin/vdltodmx
--rwxr-xr-x	root/root	usr/bin/xdmx
--rwxr-xr-x	root/root	usr/bin/xdmxconfig
 -rwxr-xr-x	root/root	usr/bin/xorgconfig
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/xorg/
@@ -279,18 +267,14 @@ drwxr-xr-x	root/root	usr/lib/xserver/
 -rw-r--r--	root/root	usr/lib/xserver/SecurityPolicy
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/Xdmx.1.gz
 -rw-r--r--	root/root	usr/man/man1/Xnest.1.gz
 -rw-r--r--	root/root	usr/man/man1/Xorg.1.gz
 -rw-r--r--	root/root	usr/man/man1/Xserver.1.gz
 -rw-r--r--	root/root	usr/man/man1/Xvfb.1.gz
 -rw-r--r--	root/root	usr/man/man1/cvt.1.gz
--rw-r--r--	root/root	usr/man/man1/dmxtodmx.1.gz
 -rw-r--r--	root/root	usr/man/man1/gtf.1.gz
 -rw-r--r--	root/root	usr/man/man1/pcitweak.1.gz
 -rw-r--r--	root/root	usr/man/man1/scanpci.1.gz
--rw-r--r--	root/root	usr/man/man1/vdltodmx.1.gz
--rw-r--r--	root/root	usr/man/man1/xdmxconfig.1.gz
 -rw-r--r--	root/root	usr/man/man1/xorgconfig.1.gz
 drwxr-xr-x	root/root	usr/man/man4/
 -rw-r--r--	root/root	usr/man/man4/exa.4.gz
