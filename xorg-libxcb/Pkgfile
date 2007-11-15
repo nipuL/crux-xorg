@@ -4,17 +4,14 @@
 # Depends on: xorg-xcb-proto, xorg-libxdmcp, xorg-libxau, libxslt, libpthread-stubs
 
 name=xorg-libxcb
-version=1.0
-release=2
+version=1.1
+release=1
 source=(http://xcb.freedesktop.org/dist/libxcb-$version.tar.bz2)
 
 build() {
 	cd libxcb-$version
 
-	# remove locking assertions
-	sed -i -e '41d' -e '50d' src/xcb_xlib.c
-
-	./configure --prefix=/usr --disable-build-docs
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
