@@ -4,11 +4,14 @@
 
 name=xorg-libpixman
 version=0.9.6
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/lib/pixman-$version.tar.bz2)
 
 build() {
 	cd pixman-$version
+
+	# don't build test programs
+	sed -i -e 's/^SUBDIRS = pixman test/SUBDIRS = pixman/' Makefile.in
 
 	./configure --prefix=/usr --mandir=/usr/man
 
