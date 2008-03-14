@@ -853,6 +853,10 @@ drwxr-xr-x	root/root	usr/share/X11/locale/C/
 -rw-r--r--	root/root	usr/share/X11/locale/C/Compose (EMPTY)
 -rw-r--r--	root/root	usr/share/X11/locale/C/XI18N_OBJS
 -rw-r--r--	root/root	usr/share/X11/locale/C/XLC_LOCALE
+drwxr-xr-x	root/root	usr/share/X11/locale/am_ET.UTF-8/
+-rw-r--r--	root/root	usr/share/X11/locale/am_ET.UTF-8/Compose
+-rw-r--r--	root/root	usr/share/X11/locale/am_ET.UTF-8/XI18N_OBJS (EMPTY)
+-rw-r--r--	root/root	usr/share/X11/locale/am_ET.UTF-8/XLC_LOCALE (EMPTY)
 drwxr-xr-x	root/root	usr/share/X11/locale/armscii-8/
 -rw-r--r--	root/root	usr/share/X11/locale/armscii-8/Compose
 -rw-r--r--	root/root	usr/share/X11/locale/armscii-8/XI18N_OBJS
