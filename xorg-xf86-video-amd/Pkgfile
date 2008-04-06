@@ -3,12 +3,12 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-video-amd
-version=2.7.7.7
+version=2.8.0
 release=1
-source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-amd-$version.tar.bz2)
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-geode-$version.tar.bz2)
 
 build() {
-	cd xf86-video-amd-$version
+	cd xf86-video-geode-$version
 
 	./configure --prefix=/usr --mandir=/usr/man
 
