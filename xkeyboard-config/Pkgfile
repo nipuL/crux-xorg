@@ -4,7 +4,7 @@
 # Depends on: xorg-xkbcomp, p5-xml-parser
 
 name=xkeyboard-config
-version=1.0
+version=1.2
 release=1
 source=(http://xlibs.freedesktop.org/xkbdesc/$name-$version.tar.bz2)
 
@@ -17,6 +17,8 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 
 	ln -s /var/lib/xkb $PKG/usr/share/X11/xkb/compiled 
 }

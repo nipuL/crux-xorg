@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/compat/
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/misc
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/mousekeys
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/norepeat
+-rw-r--r--	root/root	usr/share/X11/xkb/compat/olpc
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/pc
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/pc98
 -rw-r--r--	root/root	usr/share/X11/xkb/compat/xfree86
@@ -163,8 +164,8 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/capslock
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/cd
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ch
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/cn
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/compose
--rw-r--r--	root/root	usr/share/X11/xkb/symbols/cs
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ctrl
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/cz
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/de
@@ -188,6 +189,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/fujitsu_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/gb
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ge
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/gh
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/gn
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/gr
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/group
 drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/hp_vndr/
@@ -206,6 +208,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/hp_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/keypad
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/kg
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/kh
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/kpdl
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/kr
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/kz
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/la
@@ -235,6 +238,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/macintosh_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/macintosh_vndr/se
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/macintosh_vndr/us
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/mao
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/me
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/mk
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/mm
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/mn
@@ -247,15 +251,18 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/nec_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/nl
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/no
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/np
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/olpc
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/pc
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/pk
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/pl
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/pt
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ro
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/rs
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ru
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/se
 drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/sgi_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sgi_vndr/jp
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/shift
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/si
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sk
 drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/sony_vndr/
