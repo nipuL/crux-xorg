@@ -5,7 +5,7 @@
 
 name=mesa3d
 version=7.0.3
-release=1
+release=2
 source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 
 build() {
@@ -35,4 +35,7 @@ EOF
 
 	install -d $PKG/usr/bin
 	install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
+
+	# remove pkgmk's working directory from the pkgconfig files
+	sed -i -e 's/^prefix=.*$/prefix=\/usr/' $PKG/usr/lib/pkgconfig/*.pc
 }
