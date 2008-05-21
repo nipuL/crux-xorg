@@ -4,7 +4,7 @@
 # Depends on: xorg-libx11, xorg-libxext, xorg-libxtst, xorg-libxxf86vm, xorg-libxxf86dga, xorg-libxxf86misc, xorg-libxi, xorg-libxrender, xorg-libxinerama, xorg-libdmx
 
 name=xorg-xdpyinfo
-version=1.0.2
+version=1.0.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/app/xdpyinfo-$version.tar.bz2)
 
