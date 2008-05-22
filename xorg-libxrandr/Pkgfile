@@ -1,4 +1,4 @@
-# Description: xorg lib libXrandr
+# Description: X Resize and Rotate extension client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-libx11, xorg-randrproto, xorg-xextproto, xorg-libxext, xorg-libxrender, xorg-renderproto

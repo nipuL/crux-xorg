@@ -1,4 +1,4 @@
-# Description: xorg lib libXTrap
+# Description: X Trap extension client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-libx11, xorg-libxt, xorg-trapproto, xorg-xextproto, xorg-libxext

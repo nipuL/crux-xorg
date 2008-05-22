@@ -1,4 +1,4 @@
-# Description: xorg lib libXft
+# Description: X font rendering client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-libxrender, freetype, fontconfig
