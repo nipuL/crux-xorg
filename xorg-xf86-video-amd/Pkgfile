@@ -3,7 +3,7 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-video-amd
-version=2.9.0
+version=2.10.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-geode-$version.tar.bz2)
 
