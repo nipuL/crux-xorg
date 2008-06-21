@@ -1,0 +1,19 @@
+# Description: X Event Interception extension client library
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-evieext, xorg-xproto, xorg-libx11, xorg-libxext
+
+name=xorg-libxevie
+version=1.0.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXevie-$version.tar.bz2)
+
+build() {
+	cd libXevie-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
