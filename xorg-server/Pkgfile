@@ -1,0 +1,25 @@
+# Description: X Window System server
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-xf86driproto, xorg-libxkbui, xorg-xcmiscproto, xorg-scrnsaverproto, xorg-bigreqsproto, xorg-libxevie, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxaw, xorg-libxvmc, xorg-libxi, xorg-libxres, xorg-libxcomposite, xorg-libxinerama, xorg-libxrandr, xorg-libxtrap, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga, xorg-libpixman
+
+name=xorg-server
+version=1.4.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2 \
+        http://dl.sourceforge.net/mesa3d/MesaLib-7.0.3.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --enable-dri \
+	            --with-mesa-source=$SRC/Mesa-7.0.3 \
+	            --localstatedir=/var --mandir=/usr/man \
+	            --with-xkb-output=/var/lib/xkb
+
+	make
+	make DESTDIR=$PKG install
+
+	rmdir $PKG/var/log
+}
