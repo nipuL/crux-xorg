@@ -5,10 +5,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ati_drv.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/ati_drv.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/mach64_drv.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/mach64_drv.so
--rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/r128_drv.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/r128_drv.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/radeon_drv.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/radeon_drv.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/multimedia/
@@ -21,5 +17,4 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/multimedia/
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man4/
 -rw-r--r--	root/root	usr/man/man4/ati.4.gz
--rw-r--r--	root/root	usr/man/man4/r128.4.gz
 -rw-r--r--	root/root	usr/man/man4/radeon.4.gz
