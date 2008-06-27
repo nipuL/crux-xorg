@@ -22,6 +22,11 @@ OPT_FLAGS = $CFLAGS
 GLUT_LIB = m
 EOF
 
+	# Honor $CC
+	if [ -n "$CC" ]; then
+		echo "CC=$CC" >> configs/linux-dri
+	fi
+
 	# nouveau is broken w/ libdrm 2.3.0
 	sed -i -e 's/nouveau//' configs/linux-dri
 
