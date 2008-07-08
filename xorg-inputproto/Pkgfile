@@ -4,7 +4,7 @@
 
 name=xorg-inputproto
 version=1.4.3
-release=2
+release=3
 source=(http://xorg.freedesktop.org/releases/individual/proto/inputproto-$version.tar.bz2
         $name.diff)
 
