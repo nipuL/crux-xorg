@@ -4,15 +4,12 @@
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-inputproto
-version=1.4.3
-release=3
-source=(http://xorg.freedesktop.org/releases/individual/proto/inputproto-$version.tar.bz2
-        $name.diff)
+version=1.4.4
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/inputproto-$version.tar.bz2)
 
 build() {
 	cd inputproto-$version
-
-	patch -Np1 -i $SRC/$name.diff
 
 	./configure --prefix=/usr
 
