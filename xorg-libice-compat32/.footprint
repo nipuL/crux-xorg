@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib32/
+-rw-r--r--	root/root	usr/lib32/libICE.a
+-rwxr-xr-x	root/root	usr/lib32/libICE.la
+lrwxrwxrwx	root/root	usr/lib32/libICE.so -> libICE.so.6.3.0
+lrwxrwxrwx	root/root	usr/lib32/libICE.so.6 -> libICE.so.6.3.0
+-rwxr-xr-x	root/root	usr/lib32/libICE.so.6.3.0
+drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/ice.pc

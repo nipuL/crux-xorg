@@ -1,0 +1,21 @@
+# Description: xorg lib libICE
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libice, xorg-xproto-compat32, xorg-xtrans-compat32
+
+name=xorg-libice-compat32
+version=1.0.4
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libICE-$version.tar.bz2)
+
+build() {
+	cd libICE-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/include
+}
