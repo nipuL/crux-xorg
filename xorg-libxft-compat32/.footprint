@@ -1,0 +1,11 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/xft-config32
+drwxr-xr-x	root/root	usr/lib32/
+-rw-r--r--	root/root	usr/lib32/libXft.a
+-rwxr-xr-x	root/root	usr/lib32/libXft.la
+lrwxrwxrwx	root/root	usr/lib32/libXft.so -> libXft.so.2.1.13
+lrwxrwxrwx	root/root	usr/lib32/libXft.so.2 -> libXft.so.2.1.13
+-rwxr-xr-x	root/root	usr/lib32/libXft.so.2.1.13
+drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/xft.pc
