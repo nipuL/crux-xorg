@@ -1,0 +1,21 @@
+# Description: xorg proto glproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-glproto
+
+name=xorg-glproto-compat32
+version=1.4.9
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/glproto-$version.tar.bz2)
+
+build() {
+	cd glproto-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/include
+}
