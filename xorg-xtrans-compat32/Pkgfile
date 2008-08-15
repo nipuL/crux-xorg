@@ -1,0 +1,21 @@
+# Description: xorg lib xtrans
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-xtrans
+
+name=xorg-xtrans-compat32
+version=1.2.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/xtrans-$version.tar.bz2)
+
+build() {
+	cd xtrans-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/{share,include}
+}
