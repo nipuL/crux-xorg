@@ -1,0 +1,14 @@
+# Arch: compat32
+# Arch Maintainer: Lucas Hazel, lucas@die.net.au
+# Arch Depends: xorg-xproto
+
+build() {
+	cd xproto-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/include
+}

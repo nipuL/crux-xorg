@@ -1,0 +1,21 @@
+# Description: xorg proto xproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-xproto
+
+name=xorg-xproto-compat32
+version=7.0.13
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/xproto-$version.tar.bz2)
+
+build() {
+	cd xproto-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/include
+}
