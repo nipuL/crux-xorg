@@ -1,0 +1,22 @@
+# Description: XCB library
+# URL: http://xcb.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libxcb, xorg-xcb-proto-compat32, xorg-libxdmcp-compat32, xorg-libxau-compat32, libxslt-compat32, libpthread-stubs-compat32
+
+name=xorg-libxcb-compat32
+version=1.1
+release=1
+source=(http://xcb.freedesktop.org/dist/libxcb-$version.tar.bz2)
+
+build() {
+	cd libxcb-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32 \
+		--disable-build-docs
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/{include,share}
+}
