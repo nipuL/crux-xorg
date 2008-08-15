@@ -1,0 +1,24 @@
+# Description: Pixel manipulation library
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libpixman
+
+name=xorg-libpixman-compat32
+version=0.10.0
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/pixman-$version.tar.bz2)
+
+build() {
+	cd pixman-$version
+
+	# don't build test programs
+	sed -i -e 's/^SUBDIRS = pixman test/SUBDIRS = pixman/' Makefile.in
+
+	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/include
+}
