@@ -1,0 +1,22 @@
+# Description: xorg proto randrproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-randrproto
+
+name=xorg-randrproto-compat32
+version=1.2.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/randrproto-$version.tar.bz2)
+
+build() {
+    cd randrproto-$version
+
+    ./configure --prefix=/usr \
+	--libdir=/usr/lib32
+	
+    make
+    make DESTDIR=$PKG install
+    
+    rm -rf $PKG/usr/{share,include}
+}
