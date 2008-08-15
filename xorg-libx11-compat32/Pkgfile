@@ -1,0 +1,22 @@
+# Description: X client library
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libx11, xorg-libxcb-compat32, xorg-xf86bigfontproto-compat32, xorg-xextproto-compat32, xorg-xtrans-compat32, xorg-kbproto-compat32, xorg-inputproto-compat32
+
+name=xorg-libx11-compat32
+version=1.1.4
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libX11-$version.tar.bz2)
+
+build() {
+	cd libX11-$version
+
+	./configure --prefix=/usr \
+		--mandir=/usr/man \
+		--libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/{include,man,share}
+}
