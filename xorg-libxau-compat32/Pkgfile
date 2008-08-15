@@ -1,0 +1,21 @@
+# Description: X Authorization routines
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libxau xorg-xproto-compat32
+
+name=xorg-libxau-compat32
+version=1.0.3
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXau-$version.tar.bz2)
+
+build() {
+	cd libXau-$version
+
+	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/{include,man}
+}
