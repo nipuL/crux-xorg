@@ -1,0 +1,21 @@
+# Description: xorg proto fixesproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-fixesproto
+
+name=xorg-fixesproto-compat32
+version=4.0
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/fixesproto-$version.tar.bz2)
+
+build() {
+    cd fixesproto-$version
+
+    ./configure --prefix=/usr --libdir=/usr/lib32
+
+    make
+    make DESTDIR=$PKG install
+    
+    rm -rf $PKG/usr/include
+}
