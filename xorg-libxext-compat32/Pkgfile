@@ -1,0 +1,20 @@
+# Description: Common X extensions client library
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-libxext, xorg-xproto-compat32, xorg-libx11-compat32, xorg-xextproto-compat32, xorg-libxau-compat32
+
+name=xorg-libxext-compat32
+version=1.0.4
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXext-$version.tar.bz2)
+
+build() {
+	cd libXext-$version
+
+	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/man
+}
