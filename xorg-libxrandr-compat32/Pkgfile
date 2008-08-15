@@ -1,0 +1,23 @@
+# Description: X Resize and Rotate extension client library
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libxrandr, xorg-libx11-compat32, xorg-randrproto-compat32, xorg-xextproto-compat32, xorg-libxext-compat32, xorg-libxrender-compat32, xorg-renderproto-compat32
+
+name=xorg-libxrandr-compat32
+version=1.2.3
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXrandr-$version.tar.bz2)
+
+build() {
+    cd libXrandr-$version
+    
+    ./configure --prefix=/usr \
+	--libdir=/usr/lib32 \
+	--mandir=/usr/man
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/{include,man}
+}
