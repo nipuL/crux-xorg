@@ -1,0 +1,21 @@
+# Description: xorg lib libXt
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libxt, xorg-libsm-compat32, xorg-libx11-compat32, xorg-xproto-compat32, xorg-kbproto-compat32
+
+name=xorg-libxt-compat32
+version=1.0.5
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXt-$version.tar.bz2)
+
+build() {
+	cd libXt-$version
+
+	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/{bin,include,man}
+}
