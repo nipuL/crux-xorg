@@ -1,0 +1,18 @@
+# Description: pthread dummy implementation
+# URL: http://xcb.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot aau
+
+name=libpthread-stubs-compat32
+version=0.1
+release=1
+source=(http://xcb.freedesktop.org/dist/libpthread-stubs-$version.tar.bz2)
+
+build() {
+	cd libpthread-stubs-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+}
