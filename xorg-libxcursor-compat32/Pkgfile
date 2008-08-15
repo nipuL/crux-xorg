@@ -1,0 +1,20 @@
+# Description: xorg lib libXcursor
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: xorg-libxcursor, xorg-libxrender-compat32, xorg-libxfixes-compat32, xorg-libx11-compat32, xorg-fixesproto-compat32
+
+name=xorg-libxcursor-compat32
+version=1.1.9
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXcursor-$version.tar.bz2)
+
+build() {
+    cd libXcursor-$version
+
+    ./configure --prefix=/usr \
+	--libdir=/usr/lib32
+    make
+    make DESTDIR=$PKG install
+    rm -rf $PKG/usr/{include,share}
+}
