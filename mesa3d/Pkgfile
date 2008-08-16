@@ -5,8 +5,8 @@
 # Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt, xorg-libxdamage
 
 name=mesa3d
-version=7.0.3
-release=2
+version=7.0.4
+release=1
 source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 
 build() {
