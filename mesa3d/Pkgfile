@@ -1,46 +1,25 @@
 # Description: Mesa 3D Graphics Library
 # URL: http://www.mesa3d.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt, xorg-libxdamage
 
 name=mesa3d
-version=7.0.4
+version=7.1
 release=1
 source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 
 build() {
-	# https://bugs.freedesktop.org/show_bug.cgi?id=11380
-	export CFLAGS="$CFLAGS -fno-ivopts"
-
 	cd Mesa-$version
 
-	cat <<EOF >> configs/linux-dri
-INSTALL_DIR = $PKG/usr
-DRI_DRIVER_INSTALL_DIR = $PKG/usr/lib/dri
-DRI_DRIVER_SEARCH_DIR = /usr/lib/dri
-OPT_FLAGS = $CFLAGS
-GLUT_LIB = m
-EOF
+	./configure --prefix=/usr \
+	            --with-driver=dri \
+	            --with-dri-driverdir=/usr/lib/dri
 
-	# Honor $CC
-	if [ -n "$CC" ]; then
-		echo "CC=$CC" >> configs/linux-dri
-	fi
+	make
 
-	# nouveau is broken w/ libdrm 2.3.0
-	sed -i -e 's/nouveau//' configs/linux-dri
-
-	make linux-dri-x86
-
-	pushd progs/xdemos
-	make glxgears glxinfo
-	popd
-
-	make install
+	make DESTDIR=$PKG install
 
 	install -d $PKG/usr/bin
 	install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
-
-	# remove pkgmk's working directory from the pkgconfig files
-	sed -i -e 's/^prefix=.*$/prefix=\/usr/' $PKG/usr/lib/pkgconfig/*.pc
 }
