@@ -4,7 +4,7 @@
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-input-joystick
-version=1.3.2
+version=1.3.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-joystick-$version.tar.bz2)
 
@@ -15,7 +15,4 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-
-	mv $PKG/usr/man/man4x/joystick.4{x,}
-	mv $PKG/usr/man/man4{x,}
 }
