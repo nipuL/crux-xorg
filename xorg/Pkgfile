@@ -4,7 +4,7 @@
 # Depends on: xorg-server, xorg-xf86-input-mouse, xorg-xf86-input-keyboard, xorg-xf86-video-vesa, xorg-xinit, xorg-xauth, xorg-rgb, xorg-font-misc-misc, xorg-font-cursor-misc, xorg-font-alias, xkeyboard-config
 
 name=xorg
-version=7.3
+version=7.4
 release=1
 source=()
 
