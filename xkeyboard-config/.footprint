@@ -129,6 +129,9 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/rules/
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/base
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/base.lst
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/base.xml
+-rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev
+-rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev.lst
+-rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev.xml
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/xfree98
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/xkb.dtd
 lrwxrwxrwx	root/root	usr/share/X11/xkb/rules/xorg -> base
