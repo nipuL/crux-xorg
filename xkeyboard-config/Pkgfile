@@ -2,10 +2,10 @@
 # URL: http://www.freedesktop.org/wiki/Software_2fXKeyboardConfig
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-xkbcomp, p5-xml-parser
+# Depends on: xorg-xkbcomp, intltool
 
 name=xkeyboard-config
-version=1.3
+version=1.4
 release=1
 source=(http://xlibs.freedesktop.org/xkbdesc/$name-$version.tar.bz2)
 
