@@ -6,7 +6,7 @@
 
 name=xorg-xcb-proto
 version=1.2
-release=1
+release=2
 source=(http://xcb.freedesktop.org/dist/xcb-proto-$version.tar.bz2)
 
 build() {
