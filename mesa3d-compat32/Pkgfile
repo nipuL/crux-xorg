@@ -5,7 +5,7 @@
 # Depends on: mesa3d, libdrm-compat32, xorg-glproto-compat32, xorg-xextproto-compat32, xorg-libx11-compat32, xorg-xf86vidmodeproto-compat32, xorg-libxext-compat32, xorg-libxxf86vm-compat32, xorg-libxt-compat32, xorg-libxdamage-compat32, xorg-dri2proto-compat32
 
 name=mesa3d-compat32
-version=7.1
+version=7.2
 release=1
 source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
 
