@@ -1,10 +1,10 @@
-# Description: Video driver for ATI Radeons with r5xx/r6xx chips
+# Description: Video driver for ATI Radeons with r5xx/r6xx/r7xx chips
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xf86-video-radeonhd
-version=1.2.1
+version=1.2.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-radeonhd-$version.tar.bz2)
 
