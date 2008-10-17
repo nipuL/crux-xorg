@@ -5,7 +5,7 @@
 # Depends on: xorg-libx11, xorg-libxcb-compat32, xorg-xf86bigfontproto-compat32, xorg-xextproto-compat32, xorg-xtrans-compat32, xorg-kbproto-compat32, xorg-inputproto-compat32
 
 name=xorg-libx11-compat32
-version=1.1.4
+version=1.1.5
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libX11-$version.tar.bz2)
 
