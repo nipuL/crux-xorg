@@ -2,4 +2,3 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/xorg-macros.m4
--rw-r--r--	root/root	usr/share/aclocal/xorgversion.m4
