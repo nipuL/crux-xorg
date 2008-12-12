@@ -5,7 +5,7 @@
 # Depends on: xorg-xproto
 
 name=xorg-xproto-compat32
-version=7.0.13
+version=7.0.14
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/xproto-$version.tar.bz2)
 
