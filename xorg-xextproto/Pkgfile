@@ -4,7 +4,7 @@
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xextproto
-version=7.0.3
+version=7.0.4
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/xextproto-$version.tar.bz2)
 
