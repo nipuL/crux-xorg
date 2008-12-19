@@ -5,7 +5,7 @@
 # Depends on: xorg-libx11, xorg-libfontenc, freetype
 
 name=xorg-mkfontscale
-version=1.0.5
+version=1.0.6
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/app/mkfontscale-$version.tar.bz2)
 
