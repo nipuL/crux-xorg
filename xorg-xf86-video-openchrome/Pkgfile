@@ -2,6 +2,7 @@
 # URL: http://www.openchrome.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server
 
 name=xorg-xf86-video-openchrome
 version=0.2.903
