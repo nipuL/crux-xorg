@@ -1,6 +1,7 @@
 # Description: Intel graphics video driver
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server
 
 name=xorg-xf86-video-intel
 version=2.6.0

@@ -1,6 +1,7 @@
 # Description: xorg driver xf86-input-elographics
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server
 
 name=xorg-xf86-input-elographics
 version=1.2.3

@@ -1,6 +1,7 @@
 # Description: xorg driver xf86-video-mach64
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server
 
 name=xorg-xf86-video-mach64
 version=6.8.0

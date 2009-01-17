@@ -1,6 +1,7 @@
 # Description: Synaptics touchpad input driver
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server
 
 name=xorg-xf86-input-synaptics
 version=0.15.2
