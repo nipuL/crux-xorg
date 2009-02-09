@@ -2,7 +2,13 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/synclient
 -rwxr-xr-x	root/root	usr/bin/syndaemon
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/xorg/
+-rw-r--r--	root/root	usr/include/xorg/synaptics-properties.h
+-rw-r--r--	root/root	usr/include/xorg/synaptics.h
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xorg-synaptics.pc
 drwxr-xr-x	root/root	usr/lib/xorg/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/input/
