@@ -5,16 +5,20 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libXi.so -> libXi.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/libXi.so.6 -> libXi.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/libXi.so.6.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/xi.pc
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/XAllowDeviceEvents.3.gz
 -rw-r--r--	root/root	usr/man/man3/XChangeDeviceControl.3.gz
 -rw-r--r--	root/root	usr/man/man3/XChangeDeviceDontPropagateList.3.gz
 -rw-r--r--	root/root	usr/man/man3/XChangeDeviceKeyMapping.3.gz
+-rw-r--r--	root/root	usr/man/man3/XChangeDeviceProperty.3.gz
 -rw-r--r--	root/root	usr/man/man3/XChangeFeedbackControl.3.gz
 -rw-r--r--	root/root	usr/man/man3/XChangeKeyboardDevice.3.gz
 -rw-r--r--	root/root	usr/man/man3/XChangePointerDevice.3.gz
 -rw-r--r--	root/root	usr/man/man3/XCloseDevice.3.gz
+-rw-r--r--	root/root	usr/man/man3/XDeleteDeviceProperty.3.gz
 -rw-r--r--	root/root	usr/man/man3/XDeviceBell.3.gz
 -rw-r--r--	root/root	usr/man/man3/XDeviceTimeCoord.3.gz
 -rw-r--r--	root/root	usr/man/man3/XFreeDeviceList.3.gz
@@ -25,12 +29,14 @@ drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/XGetDeviceKeyMapping.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetDeviceModifierMapping.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetDeviceMotionEvents.3.gz
+-rw-r--r--	root/root	usr/man/man3/XGetDeviceProperty.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetExtensionVersion.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetFeedbackControl.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetSelectedExtensionEvents.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGrabDevice.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGrabDeviceButton.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGrabDeviceKey.3.gz
+-rw-r--r--	root/root	usr/man/man3/XListDeviceProperties.3.gz
 -rw-r--r--	root/root	usr/man/man3/XListInputDevices.3.gz
 -rw-r--r--	root/root	usr/man/man3/XOpenDevice.3.gz
 -rw-r--r--	root/root	usr/man/man3/XQueryDeviceState.3.gz
@@ -44,5 +50,3 @@ drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/XUngrabDevice.3.gz
 -rw-r--r--	root/root	usr/man/man3/XUngrabDeviceButton.3.gz
 -rw-r--r--	root/root	usr/man/man3/XUngrabDeviceKey.3.gz
-drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/xi.pc
