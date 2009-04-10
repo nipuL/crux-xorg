@@ -5,7 +5,7 @@
 # Depends on: xorg-randrproto
 
 name=xorg-randrproto-compat32
-version=1.2.2
+version=1.3.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/randrproto-$version.tar.bz2)
 
