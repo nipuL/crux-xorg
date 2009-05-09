@@ -17,13 +17,14 @@ drwxr-xr-x	root/root	usr/include/xcb/
 -rw-r--r--	root/root	usr/include/xcb/xc_misc.h
 -rw-r--r--	root/root	usr/include/xcb/xcb.h
 -rw-r--r--	root/root	usr/include/xcb/xcbext.h
--rw-r--r--	root/root	usr/include/xcb/xcbxlib.h
 -rw-r--r--	root/root	usr/include/xcb/xevie.h
 -rw-r--r--	root/root	usr/include/xcb/xf86dri.h
 -rw-r--r--	root/root	usr/include/xcb/xfixes.h
 -rw-r--r--	root/root	usr/include/xcb/xinerama.h
+-rw-r--r--	root/root	usr/include/xcb/xinput.h
 -rw-r--r--	root/root	usr/include/xcb/xprint.h
 -rw-r--r--	root/root	usr/include/xcb/xproto.h
+-rw-r--r--	root/root	usr/include/xcb/xselinux.h
 -rw-r--r--	root/root	usr/include/xcb/xtest.h
 -rw-r--r--	root/root	usr/include/xcb/xv.h
 -rw-r--r--	root/root	usr/include/xcb/xvmc.h
@@ -108,11 +109,6 @@ lrwxrwxrwx	root/root	usr/lib/libxcb-xfixes.so.0 -> libxcb-xfixes.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libxcb-xinerama.so -> libxcb-xinerama.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libxcb-xinerama.so.0 -> libxcb-xinerama.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxcb-xinerama.so.0.0.0
--rw-r--r--	root/root	usr/lib/libxcb-xlib.a
--rwxr-xr-x	root/root	usr/lib/libxcb-xlib.la
-lrwxrwxrwx	root/root	usr/lib/libxcb-xlib.so -> libxcb-xlib.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libxcb-xlib.so.0 -> libxcb-xlib.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libxcb-xlib.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libxcb-xprint.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-xprint.la
 lrwxrwxrwx	root/root	usr/lib/libxcb-xprint.so -> libxcb-xprint.so.0.0.0
@@ -135,9 +131,9 @@ lrwxrwxrwx	root/root	usr/lib/libxcb-xvmc.so.0 -> libxcb-xvmc.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxcb-xvmc.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libxcb.a
 -rwxr-xr-x	root/root	usr/lib/libxcb.la
-lrwxrwxrwx	root/root	usr/lib/libxcb.so -> libxcb.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libxcb.so.1 -> libxcb.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libxcb.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libxcb.so -> libxcb.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libxcb.so.1 -> libxcb.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libxcb.so.1.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-composite.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-damage.pc
@@ -155,7 +151,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xf86dri.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xfixes.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xinerama.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xlib.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xprint.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xtest.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-xv.pc
