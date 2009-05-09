@@ -870,6 +870,10 @@ drwxr-xr-x	root/root	usr/share/X11/locale/en_US.UTF-8/
 -rw-r--r--	root/root	usr/share/X11/locale/en_US.UTF-8/Compose
 -rw-r--r--	root/root	usr/share/X11/locale/en_US.UTF-8/XI18N_OBJS
 -rw-r--r--	root/root	usr/share/X11/locale/en_US.UTF-8/XLC_LOCALE
+drwxr-xr-x	root/root	usr/share/X11/locale/fi_FI.UTF-8/
+-rw-r--r--	root/root	usr/share/X11/locale/fi_FI.UTF-8/Compose
+-rw-r--r--	root/root	usr/share/X11/locale/fi_FI.UTF-8/XI18N_OBJS (EMPTY)
+-rw-r--r--	root/root	usr/share/X11/locale/fi_FI.UTF-8/XLC_LOCALE (EMPTY)
 drwxr-xr-x	root/root	usr/share/X11/locale/georgian-academy/
 -rw-r--r--	root/root	usr/share/X11/locale/georgian-academy/Compose
 -rw-r--r--	root/root	usr/share/X11/locale/georgian-academy/XI18N_OBJS
@@ -1020,6 +1024,10 @@ drwxr-xr-x	root/root	usr/share/X11/locale/pt_BR.UTF-8/
 -rw-r--r--	root/root	usr/share/X11/locale/pt_BR.UTF-8/Compose
 -rw-r--r--	root/root	usr/share/X11/locale/pt_BR.UTF-8/XI18N_OBJS
 -rw-r--r--	root/root	usr/share/X11/locale/pt_BR.UTF-8/XLC_LOCALE
+drwxr-xr-x	root/root	usr/share/X11/locale/ru_RU.UTF-8/
+-rw-r--r--	root/root	usr/share/X11/locale/ru_RU.UTF-8/Compose
+-rw-r--r--	root/root	usr/share/X11/locale/ru_RU.UTF-8/XI18N_OBJS
+-rw-r--r--	root/root	usr/share/X11/locale/ru_RU.UTF-8/XLC_LOCALE
 drwxr-xr-x	root/root	usr/share/X11/locale/tatar-cyr/
 -rw-r--r--	root/root	usr/share/X11/locale/tatar-cyr/Compose (EMPTY)
 -rw-r--r--	root/root	usr/share/X11/locale/tatar-cyr/XI18N_OBJS
