@@ -12,7 +12,6 @@ drwxr-xr-x	root/root	usr/include/xcb/
 -rw-r--r--	root/root	usr/include/xcb/xcb_property.h
 -rw-r--r--	root/root	usr/include/xcb/xcb_renderutil.h
 -rw-r--r--	root/root	usr/include/xcb/xcb_reply.h
--rw-r--r--	root/root	usr/include/xcb/xcb_wm.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libxcb-atom.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-atom.la
@@ -41,9 +40,9 @@ lrwxrwxrwx	root/root	usr/lib/libxcb-image.so.0 -> libxcb-image.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxcb-image.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libxcb-keysyms.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-keysyms.la
-lrwxrwxrwx	root/root	usr/lib/libxcb-keysyms.so -> libxcb-keysyms.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libxcb-keysyms.so.0 -> libxcb-keysyms.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libxcb-keysyms.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libxcb-keysyms.so -> libxcb-keysyms.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libxcb-keysyms.so.1 -> libxcb-keysyms.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libxcb-keysyms.so.1.0.0
 -rw-r--r--	root/root	usr/lib/libxcb-property.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-property.la
 lrwxrwxrwx	root/root	usr/lib/libxcb-property.so -> libxcb-property.so.1.0.0
@@ -59,11 +58,6 @@ lrwxrwxrwx	root/root	usr/lib/libxcb-render-util.so.0 -> libxcb-render-util.so.0.
 lrwxrwxrwx	root/root	usr/lib/libxcb-reply.so -> libxcb-reply.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libxcb-reply.so.1 -> libxcb-reply.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libxcb-reply.so.1.0.0
--rw-r--r--	root/root	usr/lib/libxcb-wm.a
--rwxr-xr-x	root/root	usr/lib/libxcb-wm.la
-lrwxrwxrwx	root/root	usr/lib/libxcb-wm.so -> libxcb-wm.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libxcb-wm.so.0 -> libxcb-wm.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libxcb-wm.so.0.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-atom.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-aux.pc
@@ -74,4 +68,3 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-property.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-renderutil.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-reply.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/xcb-wm.pc
