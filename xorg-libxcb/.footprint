@@ -51,9 +51,9 @@ lrwxrwxrwx	root/root	usr/lib/libxcb-glx.so.0 -> libxcb-glx.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxcb-glx.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libxcb-randr.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-randr.la
-lrwxrwxrwx	root/root	usr/lib/libxcb-randr.so -> libxcb-randr.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libxcb-randr.so.0 -> libxcb-randr.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libxcb-randr.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libxcb-randr.so -> libxcb-randr.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libxcb-randr.so.1 -> libxcb-randr.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libxcb-randr.so.1.0.0
 -rw-r--r--	root/root	usr/lib/libxcb-record.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-record.la
 lrwxrwxrwx	root/root	usr/lib/libxcb-record.so -> libxcb-record.so.0.0.0
