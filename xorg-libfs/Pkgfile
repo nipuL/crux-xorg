@@ -4,7 +4,7 @@
 # Depends on: xorg-xproto, xorg-fontsproto, xorg-xtrans
 
 name=xorg-libfs
-version=1.0.1
+version=1.0.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libFS-$version.tar.bz2)
 
