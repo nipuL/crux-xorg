@@ -4,7 +4,7 @@
 # Depends on: xorg-server
 
 name=xorg-xf86-video-tseng
-version=1.2.1
+version=1.2.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-tseng-$version.tar.bz2)
 
