@@ -1,7 +1,7 @@
 # Description: xorg proto dmxproto
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-dmxproto
 version=2.2.2

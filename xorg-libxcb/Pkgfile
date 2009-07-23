@@ -1,7 +1,7 @@
 # Description: XCB library
 # URL: http://xcb.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-xcb-proto, xorg-libxdmcp, xorg-libxau, libxslt, libpthread-stubs
 
 name=xorg-libxcb

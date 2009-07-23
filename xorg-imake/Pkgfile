@@ -1,7 +1,7 @@
 # Description: imake build system
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-xproto, xorg-cf-files
 
 name=xorg-imake

@@ -1,7 +1,7 @@
 # Description: pthread dummy implementation
 # URL: http://xcb.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Lucas Hazel, lucas at die dot net dot aau
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=libpthread-stubs-compat32
 version=0.1

@@ -1,7 +1,7 @@
 # Description: xorg lib libdmx
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-libx11, xorg-libxext, xorg-dmxproto
 
 name=xorg-libdmx

@@ -1,7 +1,7 @@
 # Description: xorg proto resourceproto
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-resourceproto
 version=1.0.2

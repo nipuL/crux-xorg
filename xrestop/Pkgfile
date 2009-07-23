@@ -1,7 +1,6 @@
 # Description: top like tool for monitoring X client/server resource usage
 # URL: http://freedesktop.org/wiki/Software/xrestop
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-libxres
 
 name=xrestop

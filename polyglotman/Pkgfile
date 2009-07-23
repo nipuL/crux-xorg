@@ -1,7 +1,6 @@
 # Description: man page translator
 # URL: http://polyglotman.sourceforge.net
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=polyglotman
 version=3.2

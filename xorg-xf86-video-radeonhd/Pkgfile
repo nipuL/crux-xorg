@@ -1,7 +1,6 @@
 # Description: Video driver for ATI Radeons with r5xx/r6xx/r7xx chips
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Depends on: xorg-server
 
 name=xorg-xf86-video-radeonhd

@@ -1,7 +1,7 @@
 # Description: xorg lib libXxf86dga
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-xproto, xorg-libx11, xorg-libxext, xorg-xf86dgaproto
 
 name=xorg-libxxf86dga

@@ -1,7 +1,7 @@
 # Description: X Input client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-xproto, xorg-libx11, xorg-xextproto, xorg-libxext, xorg-inputproto
 
 name=xorg-libxi

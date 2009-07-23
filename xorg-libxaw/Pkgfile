@@ -1,7 +1,7 @@
 # Description: X Athena Widgets toolkit
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-xproto, xorg-libx11, xorg-xextproto, xorg-libxext, xorg-libxt, xorg-libxmu, xorg-libxpm, xorg-libxau
 
 name=xorg-libxaw

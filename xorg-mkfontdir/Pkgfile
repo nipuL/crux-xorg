@@ -1,7 +1,7 @@
 # Description: Create an index of X font files
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-mkfontdir
 version=1.0.4

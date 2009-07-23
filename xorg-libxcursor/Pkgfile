@@ -1,7 +1,7 @@
 # Description: xorg lib libXcursor
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 # Depends on: xorg-libxrender, xorg-libxfixes, xorg-libx11, xorg-fixesproto
 
 name=xorg-libxcursor

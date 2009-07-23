@@ -1,7 +1,7 @@
 # Description: xorg font font-bitstream-speedo
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-font-bitstream-speedo
 version=1.0.0
