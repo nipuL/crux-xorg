@@ -4,7 +4,7 @@
 # Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-renderproto
-version=0.9.3
+version=0.11
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/renderproto-$version.tar.bz2)
 
