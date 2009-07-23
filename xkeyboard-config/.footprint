@@ -157,7 +157,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/be
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/bg
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/br
--rw-r--r--	root/root	usr/share/X11/xkb/symbols/braille
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/brai
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/bt
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/by
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ca
@@ -265,6 +265,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/sgi_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/shift
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/si
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sk
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/sn
 drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/sony_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sony_vndr/us
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/srvr_ctrl
@@ -298,8 +299,10 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/sun_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sun_vndr/us
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sun_vndr/usb
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/sy
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/terminate
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/th
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/tj
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/tm
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/tr
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/typo
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/ua

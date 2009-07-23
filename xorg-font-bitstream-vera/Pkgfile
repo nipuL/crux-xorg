@@ -1,11 +1,10 @@
 # Description: xorg font bitstream vera
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Arch Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-font-bitstream-vera
 version=1.10
-release=1
+release=2
 source=(http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/ttf-bitstream-vera-$version.tar.bz2)
 
 build() {
