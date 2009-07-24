@@ -7,7 +7,7 @@
 name=mesa3d-compat32
 version=7.4.4
 release=1
-source=(http://dl.sourceforge.net/$name/Mesa{Lib,Demos}-$version.tar.bz2)
+source=(http://dl.sourceforge.net/mesa3d/Mesa{Lib,Demos}-$version.tar.bz2)
 
 build() {
     cd Mesa-$version
