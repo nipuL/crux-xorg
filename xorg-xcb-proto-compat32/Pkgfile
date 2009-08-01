@@ -5,7 +5,7 @@
 # Depends on: xorg-xcb-proto
 
 name=xorg-xcb-proto-compat32
-version=1.4
+version=1.5
 release=1
 source=(http://xcb.freedesktop.org/dist/xcb-proto-$version.tar.bz2)
 
