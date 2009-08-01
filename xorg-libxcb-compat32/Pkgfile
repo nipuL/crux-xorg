@@ -5,7 +5,7 @@
 # Depends on: xorg-libxcb, xorg-xcb-proto-compat32, xorg-libxdmcp-compat32, xorg-libxau-compat32, libxslt-compat32, libpthread-stubs-compat32
 
 name=xorg-libxcb-compat32
-version=1.2
+version=1.4
 release=1
 source=(http://xcb.freedesktop.org/dist/libxcb-$version.tar.bz2)
 
