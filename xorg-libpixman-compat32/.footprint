@@ -2,8 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 -rw-r--r--	root/root	usr/lib32/libpixman-1.a
 -rwxr-xr-x	root/root	usr/lib32/libpixman-1.la
-lrwxrwxrwx	root/root	usr/lib32/libpixman-1.so -> libpixman-1.so.0.14.0
-lrwxrwxrwx	root/root	usr/lib32/libpixman-1.so.0 -> libpixman-1.so.0.14.0
--rwxr-xr-x	root/root	usr/lib32/libpixman-1.so.0.14.0
+lrwxrwxrwx	root/root	usr/lib32/libpixman-1.so -> libpixman-1.so.0.16.0
+lrwxrwxrwx	root/root	usr/lib32/libpixman-1.so.0 -> libpixman-1.so.0.16.0
+-rwxr-xr-x	root/root	usr/lib32/libpixman-1.so.0.16.0
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/pixman-1.pc
