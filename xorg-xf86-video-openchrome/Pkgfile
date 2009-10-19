@@ -4,7 +4,7 @@
 # Depends on: xorg-server
 
 name=xorg-xf86-video-openchrome
-version=0.2.903
+version=0.2.904
 release=1
 source=(http://www.openchrome.org/releases/xf86-video-openchrome-$version.tar.bz2)
 
