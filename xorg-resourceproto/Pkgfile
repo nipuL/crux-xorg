@@ -4,7 +4,7 @@
 # Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-resourceproto
-version=1.0.2
+version=1.1.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/resourceproto-$version.tar.bz2)
 

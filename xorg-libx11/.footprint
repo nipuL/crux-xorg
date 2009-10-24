@@ -23,9 +23,9 @@ lrwxrwxrwx	root/root	usr/lib/libX11-xcb.so.1 -> libX11-xcb.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libX11-xcb.so.1.0.0
 -rw-r--r--	root/root	usr/lib/libX11.a
 -rwxr-xr-x	root/root	usr/lib/libX11.la
-lrwxrwxrwx	root/root	usr/lib/libX11.so -> libX11.so.6.2.0
-lrwxrwxrwx	root/root	usr/lib/libX11.so.6 -> libX11.so.6.2.0
--rwxr-xr-x	root/root	usr/lib/libX11.so.6.2.0
+lrwxrwxrwx	root/root	usr/lib/libX11.so -> libX11.so.6.3.0
+lrwxrwxrwx	root/root	usr/lib/libX11.so.6 -> libX11.so.6.3.0
+-rwxr-xr-x	root/root	usr/lib/libX11.so.6.3.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/x11-xcb.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/x11.pc
@@ -239,6 +239,7 @@ drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/XFreeColormap.3.gz
 -rw-r--r--	root/root	usr/man/man3/XFreeColors.3.gz
 -rw-r--r--	root/root	usr/man/man3/XFreeCursor.3.gz
+-rw-r--r--	root/root	usr/man/man3/XFreeEventData.3.gz
 -rw-r--r--	root/root	usr/man/man3/XFreeExtensionList.3.gz
 -rw-r--r--	root/root	usr/man/man3/XFreeFont.3.gz
 -rw-r--r--	root/root	usr/man/man3/XFreeFontInfo.3.gz
@@ -251,12 +252,14 @@ drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/XFreeStringList.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGCValues.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGContextFromGC.3.gz
+-rw-r--r--	root/root	usr/man/man3/XGenericEventCookie.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetAtomName.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetAtomNames.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetClassHint.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetCommand.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetErrorDatabaseText.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetErrorText.3.gz
+-rw-r--r--	root/root	usr/man/man3/XGetEventData.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetFontPath.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetFontProperty.3.gz
 -rw-r--r--	root/root	usr/man/man3/XGetGCValues.3.gz

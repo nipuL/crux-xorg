@@ -4,7 +4,7 @@
 # Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-inputproto
-version=1.5.1
+version=2.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/inputproto-$version.tar.bz2)
 

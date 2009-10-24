@@ -23,12 +23,12 @@ drwxr-xr-x	root/root	usr/lib/X11/fonts/util/
 -rw-r--r--	root/root	usr/lib/X11/fonts/util/map-ISO8859-9
 -rw-r--r--	root/root	usr/lib/X11/fonts/util/map-JISX0201.1976-0
 -rw-r--r--	root/root	usr/lib/X11/fonts/util/map-KOI8-R
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/fontutil.pc
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/bdftruncate.1x.gz
--rw-r--r--	root/root	usr/man/man1/ucs2any.1x.gz
+-rw-r--r--	root/root	usr/man/man1/bdftruncate.1.gz
+-rw-r--r--	root/root	usr/man/man1/ucs2any.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/fontutil.m4
-drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/fontutil.pc

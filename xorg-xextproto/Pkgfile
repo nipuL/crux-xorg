@@ -4,7 +4,7 @@
 # Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=xorg-xextproto
-version=7.0.5
+version=7.1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/xextproto-$version.tar.bz2)
 
