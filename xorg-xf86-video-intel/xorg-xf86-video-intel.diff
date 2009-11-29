@@ -1,0 +1,12 @@
+diff -aur xf86-video-intel-2.9.1.orig/uxa/uxa-render.c xf86-video-intel-2.9.1/uxa/uxa-render.c
+--- xf86-video-intel-2.9.1.orig/uxa/uxa-render.c	2009-10-26 12:48:05.000000000 +0100
++++ xf86-video-intel-2.9.1/uxa/uxa-render.c	2009-11-29 19:05:42.944085930 +0100
+@@ -440,6 +440,8 @@
+ 
+ #if XORG_VERSION_CURRENT < XORG_VERSION_NUMERIC (1,6,99,1,0)
+ #define IMAGE_FROM_PICT(P) image_from_pict(P, 0)
++#elif XORG_VERSION_CURRENT == XORG_VERSION_NUMERIC (1,7,2,0,0)
++#define IMAGE_FROM_PICT(P) image_from_pict(P, 0)
+ #else
+ #define IMAGE_FROM_PICT(P) image_from_pict(P, 0, 0)
+ #endif
