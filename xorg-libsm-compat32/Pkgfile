@@ -5,7 +5,7 @@
 # Depends on: e2fsprogs-compat32, xorg-libsm, xorg-libice-compat32, xorg-xproto-compat32, xorg-xtrans-compat32
 
 name=xorg-libsm-compat32
-version=1.1.0
+version=1.1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libSM-$version.tar.bz2)
 
