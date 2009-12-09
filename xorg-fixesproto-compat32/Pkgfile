@@ -5,7 +5,7 @@
 # Depends on: xorg-fixesproto
 
 name=xorg-fixesproto-compat32
-version=4.0
+version=4.1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/fixesproto-$version.tar.bz2)
 
@@ -17,5 +17,5 @@ build() {
     make
     make DESTDIR=$PKG install
     
-    rm -rf $PKG/usr/include
+    rm -rf $PKG/usr/{include,share}
 }
