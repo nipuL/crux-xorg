@@ -5,7 +5,7 @@
 # Depends on: xorg-libxt, xorg-libsm-compat32, xorg-libx11-compat32, xorg-xproto-compat32, xorg-kbproto-compat32
 
 name=xorg-libxt-compat32
-version=1.0.6
+version=1.0.7
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXt-$version.tar.bz2)
 
