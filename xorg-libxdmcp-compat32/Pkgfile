@@ -5,7 +5,7 @@
 # Depends on: xorg-libxdmcp, xorg-xproto-compat32
 
 name=xorg-libxdmcp-compat32
-version=1.0.2
+version=1.0.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXdmcp-$version.tar.bz2)
 
