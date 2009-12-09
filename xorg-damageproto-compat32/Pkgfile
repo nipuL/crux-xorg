@@ -5,7 +5,7 @@
 # Depends on: xorg-damageproto
 
 name=xorg-damageproto-compat32
-version=1.1.0
+version=1.2.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/damageproto-$version.tar.bz2)
 
