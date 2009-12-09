@@ -5,7 +5,7 @@
 # Depends on: xorg-libxft, xorg-libxrender-compat32, freetype-compat32, fontconfig-compat32
 
 name=xorg-libxft-compat32
-version=2.1.13
+version=2.1.14
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXft-$version.tar.bz2)
 
