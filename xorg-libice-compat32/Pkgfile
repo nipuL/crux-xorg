@@ -5,7 +5,7 @@
 # Depends on: xorg-libice, xorg-xproto-compat32, xorg-xtrans-compat32
 
 name=xorg-libice-compat32
-version=1.0.4
+version=1.0.6
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libICE-$version.tar.bz2)
 
