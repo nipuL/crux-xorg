@@ -5,7 +5,7 @@
 # Depends on: xorg-xineramaproto
 
 name=xorg-xineramaproto-compat32
-version=1.1.2
+version=1.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/xineramaproto-$version.tar.bz2)
 
