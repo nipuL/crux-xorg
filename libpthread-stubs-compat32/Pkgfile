@@ -4,7 +4,7 @@
 # Arch Maintainer: Lucas Hazel, lucas at die dot net dot au
 
 name=libpthread-stubs-compat32
-version=0.1
+version=0.2
 release=1
 source=(http://xcb.freedesktop.org/dist/libpthread-stubs-$version.tar.bz2)
 
