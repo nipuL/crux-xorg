@@ -4,7 +4,7 @@
 # Depends on: xorg-libxinerama, xorg-libx11-compat32, xorg-xextproto-compat32, xorg-libxext-compat32, xorg-xineramaproto-compat32
 
 name=xorg-libxinerama-compat32
-version=1.0.3
+version=1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXinerama-$version.tar.bz2)
 
@@ -18,5 +18,5 @@ build() {
     make
     make DESTDIR=$PKG install
 
-    rm -rf $PKG/usr/man
+    rm -rf $PKG/usr/{include,man}
 }
