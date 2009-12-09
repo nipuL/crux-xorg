@@ -4,7 +4,7 @@
 # Depends on: xorg-libxext, xorg-xproto-compat32, xorg-libx11-compat32, xorg-xextproto-compat32, xorg-libxau-compat32
 
 name=xorg-libxext-compat32
-version=1.0.5
+version=1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXext-$version.tar.bz2)
 
@@ -16,5 +16,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	
-	rm -rf $PKG/usr/man
+	rm -rf $PKG/usr/{include,man}
 }
