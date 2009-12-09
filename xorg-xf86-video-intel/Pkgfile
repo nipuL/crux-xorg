@@ -4,12 +4,16 @@
 # Depends on: xorg-server
 
 name=xorg-xf86-video-intel
-version=2.9.0
-release=1
-source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-intel-$version.tar.bz2)
+version=2.9.1
+release=2
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-intel-$version.tar.bz2
+        $name.diff)
 
 build() {
 	cd xf86-video-intel-$version
+
+	# Fix the build against xserver 1.7.2.
+	patch -p1 -i $SRC/$name.diff
 
 	./configure --prefix=/usr --mandir=/usr/man
 

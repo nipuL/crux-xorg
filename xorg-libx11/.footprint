@@ -847,6 +847,8 @@ drwxr-xr-x	root/root	usr/man/man3/
 -rw-r--r--	root/root	usr/man/man3/XwcTextListToTextProperty.3.gz
 -rw-r--r--	root/root	usr/man/man3/XwcTextPerCharExtents.3.gz
 -rw-r--r--	root/root	usr/man/man3/XwcTextPropertyToTextList.3.gz
+drwxr-xr-x	root/root	usr/man/man5/
+-rw-r--r--	root/root	usr/man/man5/Compose.5.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/X11/
 -rw-r--r--	root/root	usr/share/X11/XErrorDB
