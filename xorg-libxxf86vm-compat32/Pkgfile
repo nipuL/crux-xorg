@@ -5,7 +5,7 @@
 # Depends on: xorg-libxxf86vm, xorg-xproto-compat32, xorg-libx11-compat32, xorg-libxext-compat32, xorg-xf86vidmodeproto-compat32
 
 name=xorg-libxxf86vm-compat32
-version=1.0.2
+version=1.1.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-$version.tar.bz2)
 
@@ -19,5 +19,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	
-	rm -rf $PKG/usr/man
+	rm -rf $PKG/usr/{include,man}
 }
