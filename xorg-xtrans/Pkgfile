@@ -3,7 +3,7 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-xtrans
-version=1.2.4
+version=1.2.5
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/xtrans-$version.tar.bz2)
 
@@ -14,4 +14,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
+	rmdir $PKG/usr/share/doc/{xtrans,}
 }
