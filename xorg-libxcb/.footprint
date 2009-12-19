@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	usr/include/xcb/
 -rw-r--r--	root/root	usr/include/xcb/composite.h
 -rw-r--r--	root/root	usr/include/xcb/damage.h
 -rw-r--r--	root/root	usr/include/xcb/dpms.h
+-rw-r--r--	root/root	usr/include/xcb/dri2.h
 -rw-r--r--	root/root	usr/include/xcb/glx.h
 -rw-r--r--	root/root	usr/include/xcb/randr.h
 -rw-r--r--	root/root	usr/include/xcb/record.h
@@ -44,6 +45,11 @@ lrwxrwxrwx	root/root	usr/lib/libxcb-damage.so.0 -> libxcb-damage.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libxcb-dpms.so -> libxcb-dpms.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libxcb-dpms.so.0 -> libxcb-dpms.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxcb-dpms.so.0.0.0
+-rw-r--r--	root/root	usr/lib/libxcb-dri2.a
+-rwxr-xr-x	root/root	usr/lib/libxcb-dri2.la
+lrwxrwxrwx	root/root	usr/lib/libxcb-dri2.so -> libxcb-dri2.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libxcb-dri2.so.0 -> libxcb-dri2.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libxcb-dri2.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libxcb-glx.a
 -rwxr-xr-x	root/root	usr/lib/libxcb-glx.la
 lrwxrwxrwx	root/root	usr/lib/libxcb-glx.so -> libxcb-glx.so.0.0.0
@@ -138,6 +144,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-composite.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-damage.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-dpms.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/xcb-dri2.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-glx.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-randr.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xcb-record.pc
